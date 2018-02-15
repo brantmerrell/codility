@@ -1,5 +1,4 @@
 // rotate array A, k times
-// see also https://app.codility.com/programmers/lessons/2-arrays/cyclic_rotation/
 
 // Assumptions:
 /// 1 <= N <= 100

@@ -1,3 +1,9 @@
+# returns the missing element of numeric array A
+
+# Assumptions:
+## 0 <= N <= 100,000
+## the elements of A are all distinct
+## 1<= A[i] <= N+1
 
 PermMissingElem <- function(A){
 	A <- as.numeric(unlist(A))	# convert to numeric vector
@@ -16,6 +22,7 @@ PermMissingElem <- function(A){
 	}
 }
 
+# Console Testing:
 print(c("Empty list - list()", PermMissingElem(list())))
 print(c("Single element - list(3)", PermMissingElem(list(3))))
 print(c("Single element - list(1)", PermMissingElem(list(1))))
@@ -24,3 +31,6 @@ print(c("Missing last - list(1,2,4,3)", PermMissingElem(list(1,2,4,3))))
 print(c("Double - list(1,3)", PermMissingElem(list(1,3))))
 print(c("Practice - list(2,3,1,5)", PermMissingElem(list(2,3,1,5))))
 
+# Codility testing: 
+## https://app.codility.com/programmers/lessons/3-time-complexity/perm_missing_elem/
+## R language not scored
