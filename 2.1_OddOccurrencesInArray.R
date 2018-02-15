@@ -7,7 +7,12 @@
 
 
 OddOccurrencesInArray <- function(A){
+
+	# unlist the array
+	# table() counts recurrence of each value
 	A <-table(unlist(A))
+
+	# return non-even values 
 	return(as.numeric(names(A[A %% 2 == 1])))
 }
 

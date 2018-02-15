@@ -13,6 +13,7 @@ def OddOccurrencesInArray(A):
 	# only store integers in object "Odd" which are not even
 	Odd = [m for m, count in collections.Counter(A).items() if not count % 2 == 0]
 
+	# return the only integer in the "Odd" array
 	return(Odd[0])
 
 # console testing:
