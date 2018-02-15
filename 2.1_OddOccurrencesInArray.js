@@ -1,10 +1,9 @@
-// returns single non-replicated element of numeric array
-// see also https://app.codility.com/programmers/lessons/2-arrays/odd_occurrences_in_array/
+// returns non-replicated element of numeric array
 
 // assumptions:
-// 1 <= A.length <= 1,000,000
-// 1 <= A[i] <= 1,000,000,000
-// all but 1 integers occur an even number of times
+/// 1 <= A.length <= 1,000,000
+/// 1 <= A[i] <= 1,000,000,000
+/// all but 1 integers occur an even number of times
 
 function OddOccurrencesInArray(A){
 
@@ -14,15 +13,21 @@ function OddOccurrencesInArray(A){
 	// sort A	
 	A = A.sort()
 
+	// only 1 integer occurs an odd number of times
+	// therefore, only every other integer in a sorted array 
+	// needs to be checked for adjacent equivalence:
 	for(i=0; i<A.length; i=i+2){
 		if(A[i] != A[i+1]){return(A[i])}
 	}
 }
 
-// testing
+// console testing:
 console.log("OddOccurrencesInArray(3); expect 3: "+OddOccurrencesInArray([3]))
 console.log("OddOccurrencesInArray([9,3,9,3,9,7,9]); expect 7: "+OddOccurrencesInArray([9,3,9,3,9,7,9]))
 
-// correctness: 100%
-// performance: 50%
+// codility testing:
+/// https://app.codility.com/programmers/lessons/1-iterations/binary_gap/
+/// note: function must be renamed "solution" for testing
+/// performance: 50% - probably due to combined use of sort() and for()
+/// correctness: 100%
 
