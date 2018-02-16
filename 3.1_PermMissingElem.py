@@ -47,7 +47,7 @@ print(["Practice - [2,3,1,5]; expect 4: "]+[PermMissingElem([2,3,1,5])])
 
 # Codility testing: 
 ## https://app.codility.com/programmers/lessons/3-time-complexity/perm_missing_elem/
-## accuracy = 100%
+## correctness = 100%
 ## performance = 100%
 
 

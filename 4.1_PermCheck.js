@@ -28,4 +28,4 @@ console.log(["PermCheck([53,54]); Expect 0:"] + [PermCheck([53,54])])
 // Codility Testing:
 /// https://app.codility.com/programmers/lessons/4-counting_elements/perm_check/
 /// Correctness: 100%
-/// Performace: 33%
+/// Performance: 33%

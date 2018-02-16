@@ -1,9 +1,4 @@
-
 # Return starting number for minimal slice
-
-A0 <- list(4,2,2,5,1,5,8)
-# A1 <- sample(-10000:10000, 100,000, replace=T)
-A2 <- c(8,4)
 
 MinAvgTwoSlice <- function(A){
 	A <- unlist(A) # Convert list to vector
@@ -64,14 +59,17 @@ MinAvgTwoSlice <- function(A){
 	}
 	return(as.integer(i1["i"]))
 }
+# Console Testing:
+print(paste("for list(4,2,2,5,1,5,8) expect 2:", MinAvgTwoSlice(list(4,2,2,5,1,5,8))))
+print(paste("for c(8,4) expect 1:", MinAvgTwoSlice(c(8,4))))
 
-print(paste("for list(4,2,2,5,1,5,8) expect 2:", MinAvgTwoSlice(A0)))
-print(paste("for c(8,4) expect 1:", MinAvgTwoSlice(A2)))
-# Correctness: 40%
-## "the best slice has length 3"? Got 2 expected 5
-## "the best slice has length 3"? Got 3 expected 2
-## increasing, decreasing, and small functional. Got 0 expected 3
+# Codility Testing:
+## https://app.codility.com/programmers/lessons/
+## Correctness: 40%
+	## "the best slice has length 3"? Got 2 expected 5
+	## "the best slice has length 3"? Got 3 expected 2
+	## increasing, decreasing, and small functional. Got 0 expected 3
 
-# Performance: 60%
-## Numbers from -1 to 1, N= ~100,000. Got 0, expected 40,002
-## Many sequences, N = 100,000. Got 1 expected 4.
+## Performance: 60%
+	## Numbers from -1 to 1, N= ~100,000. Got 0, expected 40,002
+	## Many sequences, N = 100,000. Got 1 expected 4.

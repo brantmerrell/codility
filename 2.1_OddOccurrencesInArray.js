@@ -26,7 +26,7 @@ console.log("OddOccurrencesInArray(3); expect 3: "+OddOccurrencesInArray([3]))
 console.log("OddOccurrencesInArray([9,3,9,3,9,7,9]); expect 7: "+OddOccurrencesInArray([9,3,9,3,9,7,9]))
 
 // codility testing:
-/// https://app.codility.com/programmers/lessons/1-iterations/binary_gap/
+## https://app.codility.com/programmers/lessons/2-arrays/odd_occurrences_in_array/
 /// note: function must be renamed "solution" for testing
 /// performance: 50% - probably due to combined use of sort() and for()
 /// correctness: 100%

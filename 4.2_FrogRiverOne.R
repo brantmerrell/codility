@@ -31,11 +31,12 @@ FrogRiverOne <- function(X, A){
 	return(-1)
 }
 
-# Testing:
-print(paste("FrogRiverOne(5, [1,3,1,4,2,3,5,4]). Expect 7:",FrogRiverOne(X0,A0)))
-
+# Console Testing:
+print(paste("FrogRiverOne(5, [1,3,1,4,2,3,5,4]). Expect 7:",FrogRiverOne(5, list(1,3,1,4,2,3,5,4))))
 print(paste("FrogRiverOne(1, [1]). Expect 1:",FrogRiverOne(1, list(1))))
-
 print(paste("FrogRiverOne(5,[3]). Expect -1:",FrogRiverOne(5,list(3))))
 
+# Codility Testing:
+## https://app.codility.com/programmers/lessons/4-counting_elements/frog_river_one/
+## R language not assessed
 

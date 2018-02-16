@@ -43,8 +43,11 @@ MissingInteger <- function(A){
 	}
 }
 		
+print(c("MissingInteger([1,3,6,4,1,2]); Expect 5:",MissingInteger(list(1,3,6,4,1,2))))
+print(c("MissingInteger([1,2,3]); Expect 4:",MissingInteger(list(1,2,3))))
+print(c("MissingInteger([-1,-3]); Expect 5:",MissingInteger(list(-1,-3))))
+print(c("MissingInteger([4,5,6,2]); Expect 5:",MissingInteger(list(4,5,6,2))))
 
-print(c("Expect 5:",MissingInteger(A1)))
-print(c("Expect 4:",MissingInteger(A2)))
-print(c("Expect 1:",MissingInteger(A3)))
-print(c("Expect 1:",MissingInteger(A4)))
+# codility testing:
+## https://app.codility.com/programmers/lessons/4-counting_elements/missing_integer/
+## R language not assessed

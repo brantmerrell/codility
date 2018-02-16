@@ -46,7 +46,7 @@ function PermMissingElem(A){
 //console.log(["Missing last - [1,2,4,3]; expect 5: "]+[PermMissingElem([1,2,4,3])])
 //console.log(["Double - [1,3]; expect 2: "]+[PermMissingElem([1,3])])
 //console.log(["Practice - [2,3,1,5]; expect 4: "]+[PermMissingElem([2,3,1,5])])
-/// Performance testing:
+/// large-scale testing:
 var myArray = []
 for(i=0; i<10000; i++){
 	myArray.push(i+1);

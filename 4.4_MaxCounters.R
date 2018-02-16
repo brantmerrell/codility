@@ -1,3 +1,4 @@
+# 
 
 # Definitions / Assumptions
 ## A: zero-indexed array
@@ -7,10 +8,6 @@
 ## 1 <= M <= 100,000
 ## 1 <= A[i] < N
 
-
-# Test
-A0 <- list(3,4,4,6,1,4,4)
-N0 <- 5
 
 MaxCounters <- function(N,A){
 	A <- unlist(A)
@@ -39,6 +36,10 @@ MaxCounters <- function(N,A){
 	}
 	return(Counter)
 }
+# Console Testing:
+print(paste("MaxCounters(5,list(3,4,4,6,1,4,4)): expect [3,2,2,4,2]",paste(MaxCounters(5,list(3,4,4,6,1,4,4)), collapse = ",")))
 
-print(paste("expect [3,2,2,4,2]",paste(MaxCounters(N0,A0), collapse = ",")))
+# Codility Testing:
+## https://app.codility.com/programmers/lessons/4-counting_elements/max_counters/
+## R Language not assessed
 

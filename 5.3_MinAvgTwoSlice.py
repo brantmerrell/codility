@@ -25,15 +25,17 @@ def MinAvgTwoSlice(A):
 			# if so, redefine i, sum, and average
 			ndx={"i":n,"sum":A[n]+A[n+1],"length":2,"av.min":float(A[n]+A[n+1])/2}
 	return(ndx["i"])
-
+# Console Testing:
 print({"expect 1": MinAvgTwoSlice(A0)})
 print({"expect 0": MinAvgTwoSlice(A2)})
 
-# Correctness: 40%
-## "the best slice has length 3"? Got 2 expected 5
-## "the best slice has length 3"? Got 3 expected 2
-## increasing, decreasing, and small functional. Got 0 expected 3
+# Codility Testing:
+## https://app.codility.com/programmers/lessons/
+## Correctness: 40%
+	## "the best slice has length 3"? Got 2 expected 5
+	## "the best slice has length 3"? Got 3 expected 2
+	## increasing, decreasing, and small functional. Got 0 expected 3
 
-# Performance: 60%
-## Numbers from -1 to 1, N= ~100,000. Got 0, expected 40,002
-## Many sequences, N = 100,000. Got 1 expected 4.
+## Performance: 60%
+	## Numbers from -1 to 1, N= ~100,000. Got 0, expected 40,002
+	## Many sequences, N = 100,000. Got 1 expected 4.

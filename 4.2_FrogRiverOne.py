@@ -24,12 +24,10 @@ def FrogRiverOne(X, A):
 			if Count==X:
 				return(n)
 	return(-1)
-
+# Console Testing:
 print(["FrogRiverOne(5, [1,3,1,4,2,3,5,4]). Expect 6:"]+[FrogRiverOne(5,[1,3,1,4,2,3,5,4])])
 print(["FrogRiverOne(1, [1]). Expect 0:"]+[FrogRiverOne(1, [1])])
 print(["FrogRiverOne(5,[3]). Expect -1:"]+[FrogRiverOne(5,[3])])
-
-# Codility score: 100% (correctness 100%, performance 0%)
 
 # Codility Testing:
 ## https://app.codility.com/programmers/lessons/4-counting_elements/frog_river_one/
