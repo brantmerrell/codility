@@ -6,11 +6,6 @@
 ## 1 <= min(A) 
 ## max(A) <= 1,000,000,000
 
-
-# Example:
-A1 = [4,1,3,2] # is permutation
-A0 = [4,1,3] # is not permutation
-
 def PermCheck(A):
 	if not type(A) is list:
 		return(0)
@@ -22,14 +17,15 @@ def PermCheck(A):
 
 	
 
-# testing
-print(["Is a list of integer 1 ([1]) a permutation? Expect 1:"] + [PermCheck([1])]) 
-print(["Is a list of 1 integer ([51423]) a permutation? Expect 0:"] + [PermCheck([51423])])
-print(["Is a large integer (1000000000) a permutation? expect 0:"] + [PermCheck(1000000000)]) 
-print(["Is [4,1,3,2] a permutation? Expect 1:"]+[PermCheck(A1)])
-print(["Is [4,1,3] a permutation? Expect 0:"]+[PermCheck(A0)])
-print(["repeat values: is [4,4,3,2] a permutation? Expect 0:"]+[PermCheck([4,4,3,2])])
-print(["Are two consecutive numbers [53,54] a permutation? Expect 0:"] + [PermCheck([53,54])])
+# Console testing:
+print(["PermCheck([1]); Expect 1: "] + [PermCheck([1])]) 
+print(["PermCheck([51423]); Expect 0: "] + [PermCheck([51423])])
+print(["PermCheck([4,1,3,2]); Expect 1: "]+[PermCheck(A1)])
+print(["PermCheck([4,1,3]); Expect 0:"]+[PermCheck(A0)])
+print(["PermCheck([4,4,3,2]); Expect 0:"]+[PermCheck([4,4,3,2])])
+print(["PermCheck([53,54]); Expect 0:"] + [PermCheck([53,54])])
 
-# Codility score: 100% ((Correctness+Performance)/2) (2nd attempt)
-# First attempt failed to note that a permutation must begin with the integer 1
+# Codility Testing:
+## https://app.codility.com/programmers/lessons/4-counting_elements/perm_check/
+## Correctness: 100%
+## Performance: 100%

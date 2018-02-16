@@ -25,5 +25,6 @@ console.log(["suppose (Y-X)<D? X=6, Y=8, D=3. Expect 1:"]+[FrogJmp(6,8,3)])
 
 // Codility testing: 
 /// https://app.codility.com/programmers/lessons/3-time-complexity/frog_jmp/
-/// performance: 
-/// correctness: 
+/// performance: 100% 
+/// correctness: 100%
+

@@ -1,4 +1,3 @@
-
 # A function returning the distance along an array/list required to acquire integers 1 through X
 
 # Definitions
@@ -11,10 +10,6 @@
 ## 1 <= X <= 100000
 ## 1 <= N <= 100000
 ## 1 <= A[k] <= X
-
-# Example
-A0 = [1,3,1,4,2,3,5,4]
-X0 = 5
 
 # Note: Module numpy cannot be imported in python exercise
 
@@ -30,13 +25,13 @@ def FrogRiverOne(X, A):
 				return(n)
 	return(-1)
 
-print(["FrogRiverOne(5, [1,3,1,4,2,3,5,4]). Expect 6:"]+[FrogRiverOne(X0,A0)])
-
+print(["FrogRiverOne(5, [1,3,1,4,2,3,5,4]). Expect 6:"]+[FrogRiverOne(5,[1,3,1,4,2,3,5,4])])
 print(["FrogRiverOne(1, [1]). Expect 0:"]+[FrogRiverOne(1, [1])])
-
 print(["FrogRiverOne(5,[3]). Expect -1:"]+[FrogRiverOne(5,[3])])
-
-
 
 # Codility score: 100% (correctness 100%, performance 0%)
 
+# Codility Testing:
+## https://app.codility.com/programmers/lessons/4-counting_elements/frog_river_one/
+## Correctness: 100%
+## Performance: 0%
