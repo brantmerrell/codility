@@ -63,3 +63,4 @@ console.log(["length = "]+[myArray.length]+[myArray.length]+["; max: "]
 /// correctness = 100% 
 /// performance = 100%
 
+/// Difficulty: Painless

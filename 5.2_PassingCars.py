@@ -6,6 +6,26 @@
 
 def PassingCars(A):
 
+	# count west-travelling cars
+
+	# subtract to count uncounted east-travelling cars
+
+	# start pairs of passing cars at zero
+
+	# loop through array of cars
+
+		# if the car is travelling east,
+
+			# subtract now-counted car from east
+
+			# add west-travelling cars for this car to pairs of passing cars
+
+			# if pairs exceeds 1B, return -1
+
+		# if the car is travelling west, subtract now-counted car from west
+
+	return(pairs)
+
 # console testing:
 console.log(["PassingCars([0,1,0,1,1]); expect 5: "]+[CountDiv([0,1,0,1,1])])
 
@@ -14,3 +34,4 @@ console.log(["PassingCars([0,1,0,1,1]); expect 5: "]+[CountDiv([0,1,0,1,1])])
 ## Performance:
 ## Correctness:
 
+## Difficulty: Painless

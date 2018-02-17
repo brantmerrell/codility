@@ -31,3 +31,4 @@ console.log("OddOccurrencesInArray([9,3,9,3,9,7,9]); expect 7: "+OddOccurrencesI
 /// performance: 50% - probably due to combined use of sort() and for()
 /// correctness: 100%
 
+/// Difficulty: Painless

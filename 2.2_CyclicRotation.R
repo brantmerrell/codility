@@ -23,3 +23,4 @@ print(paste("CyclicRotation(list(1,2,3,4), 4); expect [1,2,3,4]: ",paste(CyclicR
 # Codility testing: 
 ## https://app.codility.com/programmers/lessons/2-arrays/cyclic_rotation/
 ## R language not scored
+## Difficulty: Painless

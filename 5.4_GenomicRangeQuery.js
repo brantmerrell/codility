@@ -21,3 +21,4 @@ console.log(["GenomicRangeQuery('CAGCCTA',[2,5,0],[4,5,6]); expect [2,4,1]: "]+
 /// Performance:
 /// Correctness:
 
+/// Difficulty: Respectable

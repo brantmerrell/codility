@@ -34,3 +34,4 @@ console.log("CyclicRotation([1,2,3,4], 4); expect [1,2,3,4]: "+CyclicRotation([1
 /// performance: not assessed
 /// correctness: 100%
 
+/// Difficulty: Painless

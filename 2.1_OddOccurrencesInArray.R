@@ -24,3 +24,4 @@ print(paste("OddOccurrencesInArray([9,3,9,3,9,7,9]); expect 7: ",
 # Codility testing: 
 ## https://app.codility.com/programmers/lessons/2-arrays/odd_occurrences_in_array/
 ## R language not scored
+## Difficulty: Painless

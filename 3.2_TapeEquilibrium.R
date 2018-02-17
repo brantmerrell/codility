@@ -37,3 +37,4 @@ print(c("TapeEquilibrium(list(3,1,2,4,3)); expect 1: ", TapeEquilibrium(list(3,1
 # Codility testing: 
 ## https://app.codility.com/programmers/lessons/3-time-complexity/tape_equilibrium/
 ## R language not scored
+## Difficulty: Painless

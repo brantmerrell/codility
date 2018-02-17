@@ -29,3 +29,4 @@ print(paste("Are two consecutive numbers list(53,54) a permutation? Expect 0    
 # Codility testing: 
 ## https://app.codility.com/programmers/lessons/4-counting_elements/perm_check/
 ## R language not scored
+## Difficulty: Painless

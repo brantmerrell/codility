@@ -16,6 +16,7 @@
 "4.3_MissingInteger.py","https://app.codility.com/programmers/lessons/4-counting_elements/missing_integer/",100,100
 "4.4_MaxCounters.py","https://app.codility.com/programmers/lessons/4-counting_elements/max_counters/",100,100
 "5.1_CountDiv.js","https://app.codility.com/programmers/lessons/5-prefix_sums/count_div/",100,100
+"5.1_CountDiv.py","https://app.codility.com/programmers/lessons/5-prefix_sums/count_div/",100,100
 "1.1_binary_gap.js","https://app.codility.com/programmers/lessons/1-iterations/binary_gap/",NA,100
 "1.1_binary_gap.py","https://app.codility.com/programmers/lessons/1-iterations/binary_gap/",NA,100
 "1.1_binary_gap.R","https://app.codility.com/programmers/lessons/1-iterations/binary_gap/",NA,NA
@@ -31,7 +32,6 @@
 "4.2_FrogRiverOne.R","https://app.codility.com/programmers/lessons/4-counting_elements/frog_river_one/",NA,NA
 "4.3_MissingInteger.R","https://app.codility.com/programmers/lessons/4-counting_elements/missing_integer/",NA,NA
 "4.4_MaxCounters.R","https://app.codility.com/programmers/lessons/4-counting_elements/max_counters/",NA,NA
-"5.1_CountDiv.py","https://app.codility.com/programmers/lessons/5-prefix_sums/count_div/",NA,NA
 "5.1_CountDiv.R","https://app.codility.com/programmers/lessons/5-prefix_sums/count_div/",NA,NA
 "5.2_PassingCars.js","https://app.codility.com/programmers/lessons/5-prefix_sums/passing_cars/",NA,NA
 "5.2_PassingCars.py","https://app.codility.com/programmers/lessons/5-prefix_sums/passing_cars/",NA,NA

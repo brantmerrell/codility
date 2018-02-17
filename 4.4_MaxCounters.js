@@ -44,3 +44,4 @@ console.log(["MaxCounters(1,[1]); expect _: "]+[MaxCounters(1,[1])])
 /// https://app.codility.com/programmers/lessons/4-counting_elements/max_counters/
 /// Correctness = 75% (got [] expect one) 
 /// Performance = 80% (got array of zeros with wrong length)
+/// Difficulty: Respectable

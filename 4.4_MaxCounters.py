@@ -36,3 +36,4 @@ print(["MaxCounters(5,[3,4,4,6,1,4,4]); expect [3,2,2,4,2]"]+[MaxCounters(5,[3,4
 ## https://app.codility.com/programmers/lessons/4-counting_elements/max_counters/
 ## Correctness = 100%
 ## Performance = 100%
+## Difficulty: Respectable

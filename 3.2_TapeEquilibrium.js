@@ -31,3 +31,4 @@ console.log(["TapeEquilibrium([10,-10]); expect 20: "]+[TapeEquilibrium([10,-10]
 /// performance: 100%
 /// correctness: 100%
 
+/// Difficulty: Painless

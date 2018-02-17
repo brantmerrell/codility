@@ -44,3 +44,4 @@ print(paste("CountDiv(0,0,1); expect 1:",CountDiv(0,0,1)))
 ## https://app.codility.com/programmers/lessons/5-prefix_sums/count_div/
 ## R Language not assessed
 
+## Difficulty: Painless

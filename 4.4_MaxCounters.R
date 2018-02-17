@@ -43,3 +43,4 @@ print(paste("MaxCounters(5,list(3,4,4,6,1,4,4)): expect [3,2,2,4,2]",paste(MaxCo
 ## https://app.codility.com/programmers/lessons/4-counting_elements/max_counters/
 ## R Language not assessed
 
+## Difficulty: Respectable

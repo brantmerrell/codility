@@ -23,3 +23,4 @@ console.log({"MinAvgTwoSlice([8,4]); expect 0": MinAvgTwoSlice([8,4])})
 /// https://app.codility.com/programmers/lessons/5-prefix_sums/min_avg_two_slice/
 /// Correctness: 
 /// Performance: 
+/// Difficulty: Respectable

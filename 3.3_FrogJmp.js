@@ -28,3 +28,4 @@ console.log(["suppose (Y-X)<D? X=6, Y=8, D=3. Expect 1:"]+[FrogJmp(6,8,3)])
 /// performance: 100% 
 /// correctness: 100%
 
+/// Difficulty: Painless

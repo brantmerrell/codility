@@ -36,3 +36,4 @@ console.log("binary_gap(15); expect 0: "+binary_gap(15))
 /// performance: not assessed
 /// correctness: 100%
 
+/// Difficulty: Painless

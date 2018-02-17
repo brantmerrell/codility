@@ -70,3 +70,4 @@ print(paste("for c(8,4) expect 1:", MinAvgTwoSlice(c(8,4))))
 # Codility Testing:
 ## https://app.codility.com/programmers/lessons/5-prefix_sums/min_avg_two_slice/
 ## R Language not assessed
+## Difficulty: Respectable

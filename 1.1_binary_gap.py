@@ -34,3 +34,4 @@ print(["binary_gap(15); expect 0: "]+[binary_gap(15)])
 ## note: function must be renamed "solution" for testing
 ## performance: not assessed
 ## correctness: 100%
+## Difficulty: Painless

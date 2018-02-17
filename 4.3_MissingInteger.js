@@ -45,3 +45,4 @@ console.log(["MissingInteger([4,5,6,2]); Expect 1:"] + [MissingInteger([4,5,6,2]
 /// https://app.codility.com/programmers/lessons/4-counting_elements/missing_integer/
 /// performance: 25% - timeout errors
 /// correctness: 100%
+/// Difficulty: Painless

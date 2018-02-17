@@ -39,3 +39,4 @@ print({"MinAvgTwoSlice([8,4]); expect 0": MinAvgTwoSlice([8,4])})
 ## Performance: 60%
 	## Numbers from -1 to 1, N= ~100,000. Got 0, expected 40,002
 	## Many sequences, N = 100,000. Got 1 expected 4.
+## Difficulty: Respectable

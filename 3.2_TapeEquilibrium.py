@@ -32,3 +32,4 @@ print(["TapeEquilibrium([3,1,2,4,3]); expect 1: "]+[TapeEquilibrium(prac)])
 ## performance:
 ## correctness:
 
+## Difficulty: Painless

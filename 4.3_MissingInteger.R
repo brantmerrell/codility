@@ -51,3 +51,4 @@ print(c("MissingInteger([4,5,6,2]); Expect 5:",MissingInteger(list(4,5,6,2))))
 # codility testing:
 ## https://app.codility.com/programmers/lessons/4-counting_elements/missing_integer/
 ## R language not assessed
+## Difficulty: Painless

@@ -34,3 +34,4 @@ print(c("Practice - list(2,3,1,5)", PermMissingElem(list(2,3,1,5))))
 # Codility testing: 
 ## https://app.codility.com/programmers/lessons/3-time-complexity/perm_missing_elem/
 ## R language not scored
+## Difficulty: Painless

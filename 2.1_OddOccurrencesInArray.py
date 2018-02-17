@@ -26,3 +26,4 @@ print(["OddOccurrencesInArray([9,3,9,3,9,7,9]); expect 7: "]+[OddOccurrencesInAr
 ## correctness: 100%
 ## performance: 100%
 
+## Difficulty: Painless

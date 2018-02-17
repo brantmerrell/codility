@@ -49,3 +49,4 @@ console.log(["CountDiv(10,10,7); expect 0: "]+[CountDiv(10,10,7)])
 /// Correctness: 100%
 /// Note: the intuitive for-loop yielded results of 0% and 100%, respectively.
 
+/// Difficulty: Painless

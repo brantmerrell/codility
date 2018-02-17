@@ -19,3 +19,4 @@ print(paste("binary_gap(15); expect 0: ",binary_gap(15)))
 
 # codility testing: not available for R language
 ## https://app.codility.com/programmers/lessons/1-iterations/binary_gap/
+## Difficulty: Painless
