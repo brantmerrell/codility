@@ -1,8 +1,8 @@
-
 # Return starting number for minimal slice
 
-A0 = [4,2,2,5,1,5,8]
-A2 = [8,4]
+# Assumptions:
+## 2 <= N <= 100,000
+## -10,000 <= A[i] <= 10,000
 
 def MinAvgTwoSlice(A):
 	N = len(A) # Define N as defined in exercise
@@ -26,11 +26,11 @@ def MinAvgTwoSlice(A):
 			ndx={"i":n,"sum":A[n]+A[n+1],"length":2,"av.min":float(A[n]+A[n+1])/2}
 	return(ndx["i"])
 # Console Testing:
-print({"expect 1": MinAvgTwoSlice(A0)})
-print({"expect 0": MinAvgTwoSlice(A2)})
+print({"MinAvgTwoSlice([4,2,2,5,1,5,8]); expect 1": MinAvgTwoSlice([4,2,2,5,1,5,8])})
+print({"MinAvgTwoSlice([8,4]); expect 0": MinAvgTwoSlice([8,4])})
 
 # Codility Testing:
-## https://app.codility.com/programmers/lessons/
+## https://app.codility.com/programmers/lessons/5-prefix_sums/min_avg_two_slice/
 ## Correctness: 40%
 	## "the best slice has length 3"? Got 2 expected 5
 	## "the best slice has length 3"? Got 3 expected 2
