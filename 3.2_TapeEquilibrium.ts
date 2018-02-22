@@ -13,7 +13,7 @@ function TapeEquilibrium(A){
 	var Diff = [Math.abs(sum1-sum2)]
 
 	// build "Diff" array
-	for(let n=1; n<A.length-1; n++){
+	for(var n=1; n<A.length-1; n++){
 		sum1 = sum1 + A[n]
 		sum2 = sum2 - A[n]
 		Diff.push(Math.abs(sum1-sum2))

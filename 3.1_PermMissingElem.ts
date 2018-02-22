@@ -28,7 +28,7 @@ function PermMissingElem(A){
 
 		// then crawl along array and test each element
 		//for n in range(0, N):
-		for(let n=0; n<=A.length; n++){
+		for(var n=0; n<=A.length; n++){
 
 			// A[n] will correspond to n+1 until skipped element
 			if(A[n]>n+1){
@@ -48,7 +48,7 @@ function PermMissingElem(A){
 //console.log("Practice - 2,3,1,5; expect 4: "+PermMissingElem([2,3,1,5]))
 /// large-scale testing:
 var myArray = []
-for(let i=0; i<10000; i++){
+for(var i=0; i<10000; i++){
 	myArray.push(i+1);
 }
 var SPLICE = Math.floor(Math.random()*myArray.length)

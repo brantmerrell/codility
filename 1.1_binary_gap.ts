@@ -17,7 +17,7 @@ function binary_gap(N){
 	N = N.split('1')
 
 	// convert '0' strings to character counts
-	for(let i = 0; i < N.length; i++){
+	for(var i = 0; i < N.length; i++){
 		N[i] = N[i].length
 	}
 	// return highest character count

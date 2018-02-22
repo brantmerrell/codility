@@ -12,26 +12,32 @@ function MaxCounters(N, A) {
     }
     var B = 0; // define variable to track 
     var C = 0; // define variable to track
-    for (var i = 0; i <= A.length; i++) {
-        if (1 <= A[i] <= N) {
-            if (newArray[A[i - 1]] < B) {
-                newArray[A[i - 1]] = B;
+    for (i = 0; i < A.length; i++) {
+        if (1 <= A[i] && A[i] <= N) {
+            if (newArray[A[i] - 1] < B) {
+		console.log("newArray[A[i]("+A[i]+") - 1]("+newArray[A[i]-1]+") < B"+B+"->newArray[A[i]-1]=B")
+                newArray[A[i] - 1] = B;
+		console.log("newArray = "+newArray)
             }
-            newArray[A[i - 1]] = newArray[A[i - 1]] + 1;
-            if (C < newArray[A[i - 1]]) {
-                C = newArray[A[i - 1]];
+            newArray[A[i] - 1] = newArray[A[i] - 1] + 1;
+            if (C < newArray[A[i] - 1]) {
+		console.log("C < newArray[A[i] - 1]  ->  C=newArray[A[i]-1] = "+ newArray[A[i]-1])
+		C = newArray[A[i] - 1];
             }
         }
         if (A[i] == N + 1) {
             B = C;
         }
     }
-    for (var i = 0; i <= N; i++) {
+    for (i = 0; i <= N; i++) {
         if (newArray[i] < B) {
             newArray[i] = B;
         }
     }
-    newArray.pop();
+//    function isNumber(obj){
+//	return(obj!==undefined && typeof obj === 'number' && !isNaN(obj))
+//    }
+//    newArray = newArray.filter(isNumber)
     return (newArray);
 }
 // console testing:

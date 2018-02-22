@@ -25,7 +25,7 @@ function MissingInteger(A){
 	}
 
 	// crawl through index for sets
-	for(let i=0; i<A.length; i++){
+	for(var i=0; i<A.length; i++){
 
 		// test for increases greater than 1
 		if(A[i+1] - A[i] > 1){

@@ -13,7 +13,7 @@ function MaxCounters(N,A){
 
 	var B = 0 // define variable to track 
 	var C = 0 // define variable to track
-	for(let i=0; i<=A.length; i++){
+	for(var i=0; i<=A.length; i++){
 		if(1 <= A[i] <= N){
 			if(newArray[A[i-1]] < B){
 				newArray[A[i-1]] = B
@@ -27,7 +27,7 @@ function MaxCounters(N,A){
 			B = C
 		}
 	}
-	for(let i=0; i<=N; i++){
+	for(var i=0; i<=N; i++){
 		if(newArray[i] < B){
 			newArray[i] = B
 		}

@@ -14,7 +14,7 @@ function OddOccurrencesInArray(A) {
     // therefore, only every other integer in a sorted array 
     // needs to be checked for adjacent equivalence:
     for (var i = 0; i < A.length; i = i + 2) {
-        if (A[i] != A[i] + 1) {
+        if (A[i] != A[i + 1]) {
             return (A[i]);
         }
     }

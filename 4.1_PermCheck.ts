@@ -12,14 +12,14 @@ function PermCheck(A){
 	}else{
 		// test whether A is free of duplicates
 		var A_unique = A.filter(function(item,pos){return(A.indexOf(item)==pos)})
-		return(+A_unique.length==A.length)
+		return(+(A_unique.length==A.length))
 	}
 }
 	
 
 // Console testing:
-console.log("PermCheck(1); Expect 1: " + PermCheck([1])) 
-console.log("PermCheck(51423); Expect 0: " + PermCheck(51423))
+console.log("PermCheck([1]); Expect 1: " + PermCheck([1])) 
+console.log("PermCheck([51423]); Expect 0: " + PermCheck([51423]))
 console.log("PermCheck([4,1,3,2]); Expect 1: "+PermCheck([4,1,3,2]))
 console.log("PermCheck([4,1,3]); Expect 0:"+PermCheck([4,1,3]))
 console.log("PermCheck([4,4,3,2]); Expect 0:"+PermCheck([4,4,3,2]))

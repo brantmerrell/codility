@@ -15,7 +15,7 @@ function FrogRiverOne(X, A){
 	var i = []
 	while(i.length<=X){i.push(0)}
 	var Count = 0
-	for(let n=0; n<A.length; n++){
+	for(var n=0; n<A.length; n++){
 		if( A[n]!=i[A[n]-1]){
 			i[A[n]-1] = A[n]
 			Count = Count+1
