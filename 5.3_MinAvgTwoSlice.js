@@ -2,7 +2,7 @@
 
 // Assumptions:
 /// 2 <= N <= 100,000
-/// -10,000 <= A[i] <= 10,000
+/// -10,000 <= Ai <= 10,000
 
 function MinAvgTwoSlice(A){
 	// Define N as defined in exercise
@@ -16,8 +16,8 @@ function MinAvgTwoSlice(A){
 			// if so, redefine i, sum, and average
 }
 // Console Testing:
-console.log({"MinAvgTwoSlice([4,2,2,5,1,5,8]); expect 1": MinAvgTwoSlice([4,2,2,5,1,5,8])})
-console.log({"MinAvgTwoSlice([8,4]); expect 0": MinAvgTwoSlice([8,4])})
+console.log({"MinAvgTwoSlice(4,2,2,5,1,5,8); expect 1": MinAvgTwoSlice(4,2,2,5,1,5,8)})
+console.log({"MinAvgTwoSlice(8,4); expect 0": MinAvgTwoSlice(8,4)})
 
 // Codility Testing:
 /// https://app.codility.com/programmers/lessons/5-prefix_sums/min_avg_two_slice/
