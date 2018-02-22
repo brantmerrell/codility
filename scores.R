@@ -4,6 +4,7 @@ scores <- data.frame(exercise=list.files(pattern="^\\d+\\.\\d+_.+\\.(js|py|R)$")
 		link="",
 		performance="",
 		correctness="",
+		difficulty="",
 		stringsAsFactors=F)
 for(n in 1:nrow(scores)){
 	script <- readLines(scores[n,"exercise"])
@@ -13,11 +14,17 @@ for(n in 1:nrow(scores)){
 					collapse="\n")
 	scores[n,"correctness"] <- paste(script[grepl("correctness",script,ignore.case=T)],
 					collapse="\n")
+	scores[n,"difficulty"] <- paste(script[grepl("difficulty:",script,ignore.case=T)],
+					collapse="\n")
 }
 
 scores$link <- sub("^[[:punct:]]+ +","",scores$link)
 #library(stringr)
 scores$performance <- as.numeric(gsub("[[:alpha:]]|[[:punct:]]| ","",scores$performance))
 scores$correctness <- as.numeric(gsub("[[:alpha:]]|[[:punct:]]| ","",scores$correctness))
+scores$difficulty <- tolower(gsub("^([[:punct:]]| )+[Dd]ifficulty: ","",scores$difficulty))
 scores <- scores[order(scores$correctness+scores$performance),]
-write.csv(scores,"scores.csv",row.names=F)
+print(head(scores))
+mnl <- as.logical(readline("approve data? "))
+if(mnl){write.csv(scores,"scores.csv",row.names=F)}
+

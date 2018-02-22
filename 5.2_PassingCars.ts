@@ -20,7 +20,7 @@ function PassingCars(A){
 	var pairs = 0
 
 	// loop through array of cars
-	for(let i=0;i<A.length;i++){
+	for(var i=0;i<A.length;i++){
 
 		// if the car is travelling east,
 		if(A[i]==0){
