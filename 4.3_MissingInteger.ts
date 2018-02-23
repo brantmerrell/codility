@@ -15,7 +15,7 @@ function MissingInteger(A){
 	A = A.sort(function(a,b){return(a-b)})
 
 	// return 1 for empty sets, and for non-empty sets without 1
-	if(A.length == 0 || A[0]!=1){ 
+	if(A.length == 0 || A[0]!=1){
 			return(1)
 	}
 

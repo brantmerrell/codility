@@ -65,6 +65,9 @@ console.log({"MinAvgTwoSlice([8,4]); expect 0": MinAvgTwoSlice([8,4])})
 
 // Codility Testing:
 /// https://app.codility.com/programmers/lessons/5-prefix_sums/min_avg_two_slice/
-/// Correctness: 
-/// Performance: 
+/// Correctness: 60%
+	/// small_random: wrong answer, got 15 expected 17
+	/// medium_range: increasing, decreasing, and small functional; got 0 expected 3
+/// Performance: 80%
+	/// large random: got 499 expected 46034
 /// Difficulty: Respectable
