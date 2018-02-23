@@ -1,6 +1,6 @@
 # A script for aggregating the scores listed in scripts within this repo
 
-scores <- data.frame(exercise=list.files(pattern="^\\d+\\.\\d+_.+\\.(js|py|R)$"),
+scores <- data.frame(exercise=list.files(pattern="^\\d+\\.\\d+_.+\\.(js|ts|py|R)$"),
 		link="",
 		performance="",
 		correctness="",
@@ -24,7 +24,6 @@ scores$performance <- as.numeric(gsub("[[:alpha:]]|[[:punct:]]| ","",scores$perf
 scores$correctness <- as.numeric(gsub("[[:alpha:]]|[[:punct:]]| ","",scores$correctness))
 scores$difficulty <- tolower(gsub("^([[:punct:]]| )+[Dd]ifficulty: ","",scores$difficulty))
 scores <- scores[order(scores$correctness+scores$performance),]
-print(head(scores))
-mnl <- as.logical(readline("approve data? "))
-if(mnl){write.csv(scores,"scores.csv",row.names=F)}
+print(summary(scores))
+write.csv(scores,"scores.csv",row.names=F)
 

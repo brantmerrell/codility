@@ -17,7 +17,7 @@ def FrogRiverOne(X, A):
 	N = len(A)
 	i = [0]*X
 	Count = 0
-	for n in xrange(0,N):
+	for n in range(0,N):
 		if not A[n]==i[A[n]-1]:
 			i[A[n]-1] = A[n]
 			Count = Count+1
@@ -32,5 +32,5 @@ print(["FrogRiverOne(5,[3]). Expect -1:"]+[FrogRiverOne(5,[3])])
 # Codility Testing:
 ## https://app.codility.com/programmers/lessons/4-counting_elements/frog_river_one/
 ## Correctness: 100%
-## Performance: 0%
+## Performance: 100%
 ## Difficulty: Painless
