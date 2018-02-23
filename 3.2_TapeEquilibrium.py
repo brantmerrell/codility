@@ -29,7 +29,7 @@ print(["TapeEquilibrium([3,1,2,4,3]); expect 1: "]+[TapeEquilibrium(prac)])
 
 # Codility testing:
 ## https://app.codility.com/programmers/lessons/3-time-complexity/tape_equilibrium/
-## performance:
-## correctness:
+## performance: 100%
+## correctness: 66%
 
 ## Difficulty: Painless

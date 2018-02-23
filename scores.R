@@ -23,7 +23,7 @@ scores$link <- sub("^[[:punct:]]+ +","",scores$link)
 scores$performance <- as.numeric(gsub("[[:alpha:]]|[[:punct:]]| ","",scores$performance))
 scores$correctness <- as.numeric(gsub("[[:alpha:]]|[[:punct:]]| ","",scores$correctness))
 scores$difficulty <- tolower(gsub("^([[:punct:]]| )+[Dd]ifficulty: ","",scores$difficulty))
-scores <- scores[order(scores$correctness+scores$performance),]
+scores <- scores[order(is.na(scores$correctness),scores$difficulty=="painless",is.na(scores$performance),scores$correctness+scores$performance),]
 write.csv(scores,"scores.csv",row.names=F)
 print(list(correctness=table(scores$correctness),
 		performance=table(scores$performance)))
