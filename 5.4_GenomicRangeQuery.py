@@ -10,7 +10,7 @@
 
 def GenomicRangeQuery(S,P,Q):
 	# split S string into vector of characters
-	S = map(None,S)
+	S = list(S)
 	# convert A, C, G, T to 1, 2, 3, 4 respectively
 	for n in range(0,len(S)):
 		if S[n]=="A": S[n]=1
@@ -31,7 +31,7 @@ print(["GenomicRangeQuery('CAGCCTA',[2,5,0],[4,5,6]); expect [2,4,1]: "]
 
 # Codility testing:
 ## https://app.codility.com/programmers/lessons/5-prefix_sums/genomic_range_query/
-## Performance:
-## Correctness:
+## Performance: 0%
+## Correctness: 100%
 
 ## Difficulty: Respectable

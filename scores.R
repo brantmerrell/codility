@@ -24,6 +24,6 @@ scores$performance <- as.numeric(gsub("[[:alpha:]]|[[:punct:]]| ","",scores$perf
 scores$correctness <- as.numeric(gsub("[[:alpha:]]|[[:punct:]]| ","",scores$correctness))
 scores$difficulty <- tolower(gsub("^([[:punct:]]| )+[Dd]ifficulty: ","",scores$difficulty))
 scores <- scores[order(scores$correctness+scores$performance),]
-print(summary(scores))
 write.csv(scores,"scores.csv",row.names=F)
-
+print(list(correctness=table(scores$correctness),
+		performance=table(scores$performance)))
