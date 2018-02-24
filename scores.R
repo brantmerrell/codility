@@ -23,7 +23,16 @@ scores$link <- sub("^[[:punct:]]+ +","",scores$link)
 scores$performance <- as.numeric(gsub("[[:alpha:]]|[[:punct:]]| ","",scores$performance))
 scores$correctness <- as.numeric(gsub("[[:alpha:]]|[[:punct:]]| ","",scores$correctness))
 scores$difficulty <- tolower(gsub("^([[:punct:]]| )+[Dd]ifficulty: ","",scores$difficulty))
-scores <- scores[order(is.na(scores$correctness),scores$difficulty=="painless",is.na(scores$performance),scores$correctness+scores$performance),]
+scores <- scores[order(!is.na(scores$correctness),
+			!is.na(scores$performance),
+			scores$correctness,
+			scores$performance,
+			scores$difficulty,
+			decreasing=T),]
 write.csv(scores,"scores.csv",row.names=F)
-print(list(correctness=table(scores$correctness),
-		performance=table(scores$performance)))
+DF <- rbind(	py.correctness=summary(scores[grepl("py$",scores$exercise),"correctness"]),
+		js.correctness=summary(scores[grepl("js$",scores$exercise),"correctness"]),
+		py.performance=summary(scores[grepl("py$",scores$exercise),"performance"]),
+		js.performance=summary(scores[grepl("js$",scores$exercise),"performance"]))
+print(DF)
+write.csv(DF,"scoreSummary.csv")
