@@ -23,6 +23,6 @@ console.log("Triangle([10,50,5,1]); expect 0: "+Triangle([10,50,5,1]))
 
 // Codility Testing
 /// https://app.codility.com/programmers/lessons/6-sorting/triangle/
-/// performance: 
-/// correctness: 
+/// performance: 100%
+/// correctness: 100%
 /// Difficulty: Painless
