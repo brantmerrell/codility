@@ -16,7 +16,7 @@ def TapeEquilibrium(A):
 	Diff = [abs(sum1-sum2)]
 
 	# build "Diff" array
-	for n in range(1, N):
+	for n in range(1, N-1):
 		sum1 = sum1 + A[n]
 		sum2 = sum2 - A[n]
 		Diff.append(abs(sum1-sum2))
@@ -30,6 +30,6 @@ print(["TapeEquilibrium([3,1,2,4,3]); expect 1: "]+[TapeEquilibrium(prac)])
 # Codility testing:
 ## https://app.codility.com/programmers/lessons/3-time-complexity/tape_equilibrium/
 ## performance: 100%
-## correctness: 66%
+## correctness: 100%
 
 ## Difficulty: Painless

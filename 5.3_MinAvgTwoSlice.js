@@ -8,7 +8,7 @@ function MinAvgTwoSlice(A) {
     // create objects to track minimum slice for lengths of 2 and 3 along array
     var ndx2 = { "i": 0, "sum": A[0] + A[1], "length": 2, "av.min": (A[0] + A[1]) / 2 };
     var ndx3 = { "i": 0, "sum": A[0] + A[1] + A[2], "length": 3, "av.min": (A[0] + A[1] + A[3]) / 3 };
-    for (var n = 0; n <= A.length; n++) {
+    for (var n = 0; n < A.length; n++) {
         // restrict assessment of pairs according to range 1 through A.length-2
         if ((1 <= n) && ((n + 1) < A.length)) {
             // track the sum and length of P:Q to efficiently calculate new averages

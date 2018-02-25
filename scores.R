@@ -23,6 +23,7 @@ scores$link <- sub("^[[:punct:]]+ +","",scores$link)
 scores$performance <- as.numeric(gsub("[[:alpha:]]|[[:punct:]]| ","",scores$performance))
 scores$correctness <- as.numeric(gsub("[[:alpha:]]|[[:punct:]]| ","",scores$correctness))
 scores$difficulty <- tolower(gsub("^([[:punct:]]| )+[Dd]ifficulty: ","",scores$difficulty))
+scores <- scores[!grepl("R$",scores$exercise),]
 scores <- scores[order(!is.na(scores$correctness),
 			!is.na(scores$performance),
 			scores$correctness,
