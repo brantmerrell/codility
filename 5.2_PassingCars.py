@@ -5,33 +5,38 @@
 ## A[i] == 1 OR 0
 
 def PassingCars(A):
+    N = len(A)
+    # count west-travelling cars
+    west = sum(A)
+    # subtract to count uncounted east-travelling cars
+    east = N - west
+    # start pairs of passing cars at zero
+    pairs = 0
+    # loop through array of cars
+    for i in range(0,N): 
+        # if the car is travelling east,
+        if (A[i] == 0):
+            # subtract now-counted car from east
+            east = east - 1
+            # add west-travelling cars for this car to pairs of passing cars
+            pairs = pairs + west
+            # if pairs exceeds 1B, return -1
+            if (1000000000 < pairs):
+                return (-1)
+            # if the car is travelling west, subtract now-counted car from west
+        else:
+            west = west - 1
+    return (pairs)
 
-	# count west-travelling cars
-
-	# subtract to count uncounted east-travelling cars
-
-	# start pairs of passing cars at zero
-
-	# loop through array of cars
-
-		# if the car is travelling east,
-
-			# subtract now-counted car from east
-
-			# add west-travelling cars for this car to pairs of passing cars
-
-			# if pairs exceeds 1B, return -1
-
-		# if the car is travelling west, subtract now-counted car from west
-
-	return(pairs)
-
-# console testing:
-console.log(["PassingCars([0,1,0,1,1]); expect 5: "]+[CountDiv([0,1,0,1,1])])
+# Bash Testing:
+import getopt, sys, re
+args = list(getopt.getopt(sys.argv,"ho:v"))[1][1]
+args = re.sub("^\[|\]$","",args).split(",")
+args = [int(x) for x in args]
+print(PassingCars(args))
 
 # Codility testing:
 ## https://app.codility.com/programmers/lessons/5-prefix_sums/passing_cars/
 ## Performance:
 ## Correctness:
-
 ## Difficulty: Painless

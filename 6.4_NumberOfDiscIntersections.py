@@ -41,7 +41,7 @@ print(["NumberOfDiscIntersections([1,5,2,1,4,0]); expect 11: "] + [NumberOfDiscI
 print(["NumberOfDiscIntersections([1,1,1]); expect 3: "] + [NumberOfDiscIntersections([1,1,1])])
 print(["NumberOfDiscIntersections([1,2147483647,0]); expect 2: "] + [NumberOfDiscIntersections([1,2147483647,0])])
 # Codility Testing
-## https:#app.codility.com/programmers/lessons/6-sorting/number_of_disc_intersections/
+## https://app.codility.com/programmers/lessons/6-sorting/number_of_disc_intersections/
 ## performance: 12%
 ## correctness: 100%
 ## Difficulty: Respectable

@@ -33,8 +33,10 @@ function PassingCars(A) {
     }
     return (pairs);
 }
-// console testing:
-console.log("PassingCars([0,1,0,1,1]); expect 5: " + PassingCars([0, 1, 0, 1, 1]));
+// Bash Testing:
+var args = process.argv[2];
+args = args.replace(/^\[|\]$/g, "").split(",").map(function (item) { return (parseInt(item)); });
+console.log(PassingCars(args));
 // Codility testing:
 /// https://app.codility.com/programmers/lessons/5-prefix_sums/passing_cars/
 /// Performance: 100%

@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# A script for testing the MinAvgTwoSlice function in R, Python, and JavaScript
 echo
 echo "input: [4,2,2,5,1,5,8]; expect 1"
 echo
