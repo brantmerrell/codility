@@ -3,8 +3,9 @@
 /// 2 <= A.length <= 100,000
 /// -10,000 <= A[i] <= 10,000
 function MinAvgTwoSlice(A) {
-    if (A.length == 2)
+    if (A.length == 2) {
         return (0);
+    }
     // create objects to track minimum slice for lengths of 2 and 3 along array
     var ndx2 = { "i": 0, "sum": A[0] + A[1], "length": 2, "av.min": (A[0] + A[1]) / 2 };
     var ndx3 = { "i": 0, "sum": A[0] + A[1] + A[2], "length": 3, "av.min": (A[0] + A[1] + A[3]) / 3 };
@@ -50,14 +51,14 @@ function MinAvgTwoSlice(A) {
     // return smallest index
     return (ndx2["i"]);
 }
-// Console Testing:
-console.log(["MinAvgTwoSlice([4,2,2,5,1,5,8]); expect 1: " + MinAvgTwoSlice([4, 2, 2, 5, 1, 5, 8])]);
-console.log({ "MinAvgTwoSlice([8,4]); expect 0": MinAvgTwoSlice([8, 4]) });
+// Bash Testing:
+args = process.argv[2].replace(/^.|.$/g,"").split(",").map(function(item){return(parseInt(item))})
+console.log(MinAvgTwoSlice(args))
 // Codility Testing:
 /// https://app.codility.com/programmers/lessons/5-prefix_sums/min_avg_two_slice/
 /// Correctness: 60%
-/// small_random: wrong answer, got 15 expected 17
-/// medium_range: increasing, decreasing, and small functional; got 0 expected 3
+///	 small_random: wrong answer, got 15 expected 17
+///	 medium_range: increasing, decreasing, and small functional; got 0 expected 3
 /// Performance: 80%
-/// large random: got 499 expected 46034
+///	 large random: got 499 expected 46034
 /// Difficulty: Respectable

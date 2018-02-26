@@ -55,8 +55,15 @@ def MinAvgTwoSlice(A):
 	# return smallest index
 	return(ndx2["i"])
 # Console Testing:
-print({"MinAvgTwoSlice([4,2,2,5,1,5,8]); expect 1": MinAvgTwoSlice([4,2,2,5,1,5,8])})
-print({"MinAvgTwoSlice([8,4]); expect 0": MinAvgTwoSlice([8,4])})
+#print({"MinAvgTwoSlice([4,2,2,5,1,5,8]); expect 1": MinAvgTwoSlice([4,2,2,5,1,5,8])})
+#print({"MinAvgTwoSlice([8,4]); expect 0": MinAvgTwoSlice([8,4])})
+
+# Bash Testing:
+import getopt, sys, re
+args = list(getopt.getopt(sys.argv,"ho:v"))[1][1]
+args = re.sub("^.|.$","",args).split(",")
+args = [int(x) for x in args]
+print(MinAvgTwoSlice(args))
 
 # Codility Testing:
 ## https://app.codility.com/programmers/lessons/5-prefix_sums/min_avg_two_slice/
