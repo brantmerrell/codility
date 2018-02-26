@@ -1,6 +1,6 @@
 # A script for aggregating the scores listed in scripts within this repo
 
-scores <- data.frame(exercise=list.files(pattern="^\\d+\\.\\d+_.+\\.(js|ts|py|R)$"),
+scores <- data.frame(exercise=list.files(pattern="^\\d+\\.\\d+_.+\\.(js|py)$"),
 		link="",
 		performance="",
 		correctness="",

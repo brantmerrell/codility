@@ -1,5 +1,5 @@
 "","Min.","1st Qu.","Median","Mean","3rd Qu.","Max.","NA's"
 "py.correctness",100,100,100,100,100,100,1
-"js.correctness",60,100,100,97.78,100,100,1
+"js.correctness",100,100,100,100,100,100,1
 "py.performance",0,100,100,87.47,100,100,3
-"js.performance",0,33,100,70.81,100,100,3
+"js.performance",0,33,100,72.06,100,100,3

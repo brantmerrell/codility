@@ -3,62 +3,48 @@
 /// 2 <= A.length <= 100,000
 /// -10,000 <= A[i] <= 10,000
 function MinAvgTwoSlice(A) {
-    if (A.length == 2) {
-        return (0);
-    }
-    // create objects to track minimum slice for lengths of 2 and 3 along array
-    var ndx2 = { "i": 0, "sum": A[0] + A[1], "length": 2, "av.min": (A[0] + A[1]) / 2 };
-    var ndx3 = { "i": 0, "sum": A[0] + A[1] + A[2], "length": 3, "av.min": (A[0] + A[1] + A[3]) / 3 };
+    // set minimal average at the beginning of the array
+    var av_min = (A[0] + A[1]) / 2;
+    // define a compare variable (as anything, really)
+    var compare = av_min;
+    // set corresponding index at the beginning of the array
+    var index_min = 0;
+    // loop through the array
     for (var n = 0; n < A.length; n++) {
-        // restrict assessment of pairs according to range 1 through A.length-2
-        if ((1 <= n) && ((n + 1) < A.length)) {
-            // track the sum and length of P:Q to efficiently calculate new averages
-            ndx2["sum"] = ndx2["sum"] + A[n + 1];
-            ndx2["length"] = ndx2["length"] + 1;
-            // test to see whether smaller average is possible for pair of list
-            if (ndx2["sum"] / ndx2["length"] < ndx2["av.min"]) {
-                // set minimal average lower for current index
-                ndx2["av.min"] = (ndx2["sum"]) / ndx2["length"];
+        // restrict 3-element assessment for indices at least 1 element from array's end
+        if (n + 1 < A.length) {
+            // create two-element comparison for average slice
+            compare = (A[n] + A[n + 1]) / 2;
+            // test whether comparison is smaller than current estimate
+            if (compare < av_min) {
+                // if so, redefine current estimate as comparison
+                av_min = compare;
+                // and redefine current index as comparison
+                index_min = n;
             }
-            // test whether n acheives a smaller average with 1 consecutive index
-            if ((A[n] + A[n + 1]) / 2 < ndx2["av.min"]) {
-                // if so, redefine i, sum, and average
-                ndx2 = { "i": n, "sum": A[n] + A[n + 1], "length": 2, "av.min": (A[n] + A[n + 1]) / 2 };
+            // restrict 3-element assessment for indices at least 2 elements from array's end
+        }
+        if (n + 2 < A.length) {
+            // create three-element comparison for average slice
+            compare = (A[n] + A[n + 1] + A[n + 2]) / 3;
+            // test whether comparison is smaller than current estimate
+            if (compare < av_min) {
+                // if so, redefine current estimate as comparison
+                av_min = compare;
+                // and redefine current index as comparison
+                index_min = n;
             }
         }
-        // restrict assessment of 3-slice according to range 1 through A.length-3
-        if ((1 <= n) && ((n + 2) < A.length)) {
-            // track the sum and length of P:Q to efficiently calculate new averages
-            ndx3["sum"] = ndx3["sum"] + A[n + 1];
-            ndx3["length"] = ndx3["length"] + 1;
-            // test to see whether smaller average is possible for 3-slice of list
-            if (ndx3["sum"] / ndx3["length"] < ndx3["av.min"]) {
-                // set minimal average lower for current index
-                ndx3["av.min"] = ndx3["sum"] / ndx3["length"];
-            }
-            // test whether n acheives a smaller average with 1 consecutive index
-            if ((A[n] + A[n + 1] + A[n + 2]) / 3 < ndx3["av.min"]) {
-                // if so, redefine i, sum, and average
-                ndx3 = { "i": n, "sum": A[n] + A[n + 1] + A[n + 2], "length": 2, "av.min": (A[n] + A[n + 1] + A[n + 2]) / 3 };
-            }
-        }
-    }
-    // if 3-slice produces smaller average than 2-slice,
-    if (ndx3["av.min"] < ndx2["av.min"]) {
-        // define two-slice index as 3-slice index
-        ndx2["i"] = ndx3["i"];
     }
     // return smallest index
-    return (ndx2["i"]);
+    return (index_min);
 }
 // Bash Testing:
-args = process.argv[2].replace(/^.|.$/g,"").split(",").map(function(item){return(parseInt(item))})
-console.log(MinAvgTwoSlice(args))
+var args = process.argv[2];
+args = args.replace(/^\[|\]$/g, "").split(",").map(function (item) { return (parseInt(item)); });
+console.log(MinAvgTwoSlice(args));
 // Codility Testing:
 /// https://app.codility.com/programmers/lessons/5-prefix_sums/min_avg_two_slice/
-/// Correctness: 60%
-///	 small_random: wrong answer, got 15 expected 17
-///	 medium_range: increasing, decreasing, and small functional; got 0 expected 3
-/// Performance: 80%
-///	 large random: got 499 expected 46034
+/// Correctness: 100%
+/// Performance: 100%
 /// Difficulty: Respectable
