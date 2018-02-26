@@ -1,9 +1,7 @@
 # count the number of passing cars on the road 
-
 # Assumptions:
 ## 1 <= N <= 100,000
 ## A[i] == 1 OR 0
-
 PassingCars <- function(A){
 	# define N as defined in exercise
 	N = length(A)
@@ -33,16 +31,12 @@ PassingCars <- function(A){
 		}
 	}
 	return (pairs)
-
 }
-
 # Bash Testing:
 args <- commandArgs()[6]
 args <- gsub("^\\[|\\]$","",args)
 args <- as.numeric(unlist(strsplit(args, ",")))
 print(PassingCars(args))
-
 # Codility testing:
 ## https://app.codility.com/programmers/lessons/5-prefix_sums/passing_cars/
-
 ## Difficulty: Painless

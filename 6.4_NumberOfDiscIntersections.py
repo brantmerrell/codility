@@ -35,7 +35,6 @@ def NumberOfDiscIntersections(A):
 		
 	
 	return(intersections)
-
 ## Console Testing
 print(["NumberOfDiscIntersections([1,5,2,1,4,0]); expect 11: "] + [NumberOfDiscIntersections([1,5,2,1,4,0])])
 print(["NumberOfDiscIntersections([1,1,1]); expect 3: "] + [NumberOfDiscIntersections([1,1,1])])

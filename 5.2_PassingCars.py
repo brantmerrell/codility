@@ -1,9 +1,7 @@
 # count the number of passing cars on the road 
-
 # Assumptions:
 ## 1 <= N <= 100,000
 ## A[i] == 1 OR 0
-
 def PassingCars(A):
     N = len(A)
     # count west-travelling cars
@@ -27,16 +25,14 @@ def PassingCars(A):
         else:
             west = west - 1
     return (pairs)
-
 # Bash Testing:
 import getopt, sys, re
 args = list(getopt.getopt(sys.argv,"ho:v"))[1][1]
 args = re.sub("^\[|\]$","",args).split(",")
 args = [int(x) for x in args]
 print(PassingCars(args))
-
 # Codility testing:
 ## https://app.codility.com/programmers/lessons/5-prefix_sums/passing_cars/
-## Performance:
-## Correctness:
+## Performance: 100%
+## Correctness: 100%
 ## Difficulty: Painless

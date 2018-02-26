@@ -14,7 +14,6 @@ MaxProductOfThree <- function(A){
 	return (prod(A[length(A)-(0:2)]))
     }
 }
-
 # Console Testing
 print(paste("MaxProductOfThree(c(-3,1,2,-2,5,6)); expect 60: ",MaxProductOfThree(c(-3, 1, 2, -2, 5, 6))));
 print(paste("MaxProductOfThree(c(-10,-2,-5,5,5,5)); expect 250: ",MaxProductOfThree(c(-10,-2,-5,5,5,5))));

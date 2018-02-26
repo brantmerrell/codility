@@ -1,38 +1,29 @@
 // returns the missing element of numeric array A
-
 // Assumptions:
 /// 0 <= N <= 100,000
 /// the elements of A are all distinct
 /// 1<= Ai <= N+1
-
 function PermMissingElem(A){
-
 	// if set is missing 1 (including if empty),
 	if((A.length==0) || (Math.min.apply(Math,A)!=1)){
-
 	// then 1 is the missing element
 		return(1)
 	
  	// if no skips exist in set (and it begins at 1),
 	}
 	if(Math.max.apply(Math,A)==A.length){
-
 	// missing element is at end of set
 		return(A.length+1)
 	
 	// otherwise missing element is within set
 	}else{
-
 		// therefore, first sort the set
 		A = A.sort(function(a,b){return(a-b)})
-
 		// then crawl along array and test each element
 		//for n in range(0, N):
 		for(var n=0; n<=A.length; n++){
-
 			// A[n] will correspond to n+1 until skipped element
 			if(A[n]>n+1){
-
 				// then, retun n+1
 				return(n+1)
 			}
@@ -57,10 +48,8 @@ console.log("Expect: "+ myArray[SPLICE]+"; length:"+myArray.length+"; max: "
 myArray.splice(SPLICE,1)
 console.log("length = "+myArray.length+myArray.length+"; max: "
 	+Math.max.apply(Math,myArray)+"; result = "+PermMissingElem(myArray))
-
 // Codility testing: 
 /// https://app.codility.com/programmers/lessons/3-time-complexity/perm_missing_elem/
 /// correctness = 100% 
 /// performance = 100%
-
 /// Difficulty: Painless

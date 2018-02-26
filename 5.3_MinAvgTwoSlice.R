@@ -1,9 +1,7 @@
 # Return starting number for minimal slice
-
 # Assumptions:
 ## 2 <= N <= 100,000
 ## -10,000 <= A[i] <= 10,000
-
 MinAvgTwoSlice <- function(A){
 	# define N as defined in exercise
 	N = length(A)
@@ -50,7 +48,6 @@ args <- as.numeric(unlist(strsplit(args, ",")))
 print(MinAvgTwoSlice(args))
 #print(paste("for list(4,2,2,5,1,5,8) expect 2:", MinAvgTwoSlice(list(4,2,2,5,1,5,8))))
 #print(paste("for c(8,4) expect 1:", MinAvgTwoSlice(c(8,4))))
-
 # Codility Testing:
 ## https://app.codility.com/programmers/lessons/5-prefix_sums/min_avg_two_slice/
 ## R Language not assessed

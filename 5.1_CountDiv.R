@@ -1,23 +1,18 @@
 # compute number of integers divisible by K in range [A...B]
-
 # Assumptions:
 ## 0 <= A < = 2,000,000,000
 ## 0 <= B < = 2,000,000,000
 ## 1 <= K < = 2,000,000,000
 ## A <= B
-
 CountDiv <- function(A,B,K){
-
 	# redefine A as lowest in-range number divisible by K
 	while(A %% K !=0){ 
 		A <- A + 1
 	}
-
 	# redefine B as highest in-range number divisible by K
 	while(B %% K !=0){
 		B <- B - 1
 	}
-
 	# if A and B are in range (A is still smaller than B),
 	if(A < B){
 		# then their difference is divisible by K,
@@ -35,13 +30,10 @@ CountDiv <- function(A,B,K){
 		return(0)
 	}
 }
-
 # Console Testing
 print(paste("CountDiv(6,11,2); expect 3:",CountDiv(6,11,2)))
 print(paste("CountDiv(0,0,1); expect 1:",CountDiv(0,0,1)))
-
 # Codility Testing:
 ## https://app.codility.com/programmers/lessons/5-prefix_sums/count_div/
 ## R Language not assessed
-
 ## Difficulty: Painless

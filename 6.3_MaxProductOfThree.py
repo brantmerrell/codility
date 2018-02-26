@@ -13,7 +13,6 @@ def MaxProductOfThree(A) :
         # if not, multiply the three largest numbers
 	return (A[len(A) - 1] * A[len(A) - 2] * A[len(A) - 3])
     
-
 # Console Testing
 print(["MaxProductOfThree([-3,1,2,-2,5,6]); expect 60: "] + [MaxProductOfThree([-3, 1, 2, -2, 5, 6])]);
 print(["MaxProductOfThree([-10,-2,-5,5,5,5]); expect 250: "] + [MaxProductOfThree([-10,-2,-5,5,5,5])]);

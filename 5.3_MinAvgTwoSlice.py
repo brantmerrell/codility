@@ -1,9 +1,7 @@
 # Return starting number for minimal slice
-
 # Assumptions:
 ## 2 <= N <= 100,000
 ## -10,000 <= A[i] <= 10,000
-
 def MinAvgTwoSlice(A):
 	# Define N as defined in exercise
 	N = len(A) 
@@ -13,7 +11,6 @@ def MinAvgTwoSlice(A):
 	index_min=0
 	# loop through the array
 	for n in range(0, N):
-
 		# restrict 3-element assessment for indices at least 1 element from array's end
 		if n+1 < N:
 			# create two-element comparison for average slice
@@ -39,14 +36,12 @@ def MinAvgTwoSlice(A):
 # Console Testing:
 #print({"MinAvgTwoSlice([4,2,2,5,1,5,8]); expect 1": MinAvgTwoSlice([4,2,2,5,1,5,8])})
 #print({"MinAvgTwoSlice([8,4]); expect 0": MinAvgTwoSlice([8,4])})
-
 # Bash Testing:
 import getopt, sys, re
 args = list(getopt.getopt(sys.argv,"ho:v"))[1][1]
 args = re.sub("^\[|\]$","",args).split(",")
 args = [int(x) for x in args]
 print(MinAvgTwoSlice(args))
-
 # Codility Testing:
 ## https://app.codility.com/programmers/lessons/5-prefix_sums/min_avg_two_slice/
 ## Correctness: 100%

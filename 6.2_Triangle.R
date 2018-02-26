@@ -1,9 +1,7 @@
 # determine whether a triangle can be built from a given set of edges
-
 # Assumptions:
 ## 0 <= N <= 100,000
 ## -2,147,483,648 <= A[i] <= 2,147,483,647
-
 Triangle <- function(A){
 	# sort array
 	A = sort(A)
@@ -14,11 +12,9 @@ Triangle <- function(A){
 	return(0)
 	
 }
-
 # Console Testing
 print(paste("Triangle(c(10,2,5,1,8,20)); expect 1: ",Triangle(c(10,2,5,1,8,20))))
 print(paste("Triangle(c(10,50,5,1)); expect 0: ",Triangle(c(10,50,5,1))))
-
 # Codility Testing
 ## https://app.codility.com/programmers/lessons/6-sorting/triangle/
 ## performance: 
