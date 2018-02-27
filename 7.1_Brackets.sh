@@ -7,7 +7,7 @@ echo R:
 Rscript 7.1_Brackets.R '{[()()]}'
 echo
 echo Python:
-python 7.1_Brackets.py {[()()]}
+python 7.1_Brackets.py '{[()()]}'
 echo
 echo JavaScript:
 nodejs 7.1_Brackets.js '{[()()]}'
