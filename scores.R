@@ -16,6 +16,8 @@ for(n in 1:nrow(scores)){
 					collapse="\n")
 	scores[n,"link"] <- paste(script[grepl("app.codility.com/",script,ignore.case=T)],
 				collapse="\n")
+	script <- script[grepl(".",script)]
+	writeLines(script,scores[n,"exercise"])
 }
 
 scores$link <- sub("^[[:punct:]]+ +","",scores$link)

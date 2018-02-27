@@ -1,6 +1,4 @@
 # Determine whether a given string of parentheses is properly nested
-# Bash Testing:
-
 def Brackets(S):
 	# split string into array
 	S = list(S)
@@ -29,7 +27,6 @@ def Brackets(S):
 	# otherwise, they do not
 	else:
 		return(0)
-
 # Bash Testing:
 import getopt, sys, re, datetime
 args = list(getopt.getopt(sys.argv,"ho:v"))[1][1]
@@ -45,5 +42,3 @@ print(["result: "]+[result]+[" ; milliseconds: "]+[timeChange.total_seconds()*10
 ## Correctness: 100%
 ## Performance: 80%
 ## Difficulty: Painless
-
-
