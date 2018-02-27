@@ -37,11 +37,15 @@ def MinAvgTwoSlice(A):
 #print({"MinAvgTwoSlice([4,2,2,5,1,5,8]); expect 1": MinAvgTwoSlice([4,2,2,5,1,5,8])})
 #print({"MinAvgTwoSlice([8,4]); expect 0": MinAvgTwoSlice([8,4])})
 # Bash Testing:
-import getopt, sys, re
+import getopt, sys, re, datetime
 args = list(getopt.getopt(sys.argv,"ho:v"))[1][1]
 args = re.sub("^\[|\]$","",args).split(",")
 args = [int(x) for x in args]
-print(MinAvgTwoSlice(args))
+time1 = datetime.datetime.now()
+result = MinAvgTwoSlice(args)
+time2 = datetime.datetime.now()
+timeChange = time2-time1
+print(["result: "]+[result]+[" ; milliseconds: "]+[timeChange.total_seconds()*1000])
 # Codility Testing:
 ## https://app.codility.com/programmers/lessons/5-prefix_sums/min_avg_two_slice/
 ## Correctness: 100%

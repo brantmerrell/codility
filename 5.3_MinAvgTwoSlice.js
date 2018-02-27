@@ -42,7 +42,10 @@ function MinAvgTwoSlice(A) {
 // Bash Testing:
 var args = process.argv[2];
 args = args.replace(/^\[|\]$/g, "").split(",").map(function (item) { return (parseInt(item)); });
-console.log(MinAvgTwoSlice(args));
+var time1 = Date.now()
+var result = MinAvgTwoSlice(args);
+var time2 = Date.now()
+console.log("result: "+result+" ; milliseconds: "+ (time2-time1))
 // Codility Testing:
 /// https://app.codility.com/programmers/lessons/5-prefix_sums/min_avg_two_slice/
 /// Correctness: 100%
