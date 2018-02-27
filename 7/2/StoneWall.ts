@@ -17,7 +17,6 @@ function StoneWall(H){
                 lookback = 0
             }
         }
-
     }
     // return the block count
     return(blocks)

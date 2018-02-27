@@ -1,5 +1,4 @@
 # Cover "Manhattan skyline" using the minimum number of rectangles. 
-
 StoneWall <- function(H){
     # define N as length of H
     N <- length(H)
@@ -20,7 +19,6 @@ StoneWall <- function(H){
                 lookback = 1
             }
         }
-
     }
     # return the block count
     return(blocks)
@@ -33,10 +31,7 @@ args <- as.numeric(unlist(strsplit(args, ",")))
 result <- StoneWall(args)
 # time2 <- unclass(Sys.time())
 print(paste("result:", result))#, "; milliseconds:",(time2-time1)*1000))
-
 # Codility Testing:
 ## https://app.codility.com/programmers/
 ## R Language not assessed 
 ## Difficulty: Painless
-
-

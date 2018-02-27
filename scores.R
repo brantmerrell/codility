@@ -1,6 +1,7 @@
 # A script for aggregating the scores listed in scripts within this repo
-
-scores <- data.frame(exercise=list.files(pattern="^\\d+\\.\\d+_.+\\.(js|py)$"),
+Files <- list.files(recursive=T,full.names=T)
+Files <- Files[grepl("(\\d/){2}",Files)]
+scores <- data.frame(exercise=Files,
 		performance="",
 		correctness="",
 		difficulty="",

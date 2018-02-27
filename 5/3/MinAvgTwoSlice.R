@@ -49,7 +49,6 @@ time1 <- unclass(Sys.time())
 result <- MinAvgTwoSlice(args)
 time2 <- unclass(Sys.time())
 print(paste("result:", result, "; milliseconds:",(time2-time1)*1000))
-
 #print(paste("for list(4,2,2,5,1,5,8) expect 2:", MinAvgTwoSlice(list(4,2,2,5,1,5,8))))
 #print(paste("for c(8,4) expect 1:", MinAvgTwoSlice(c(8,4))))
 # Codility Testing:

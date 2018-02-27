@@ -1,5 +1,4 @@
 # Determine whether a given string of parentheses is properly nested
-
 Brackets <- function(S){
 	# split string into array
 	S = unlist(strsplit(S,''))
@@ -41,11 +40,8 @@ time1 <- unclass(Sys.time())
 result <- Brackets(args)
 time2 <- unclass(Sys.time())
 print(paste("result:", result, "; milliseconds:",(time2-time1)*1000))
-
 # Codility Testing:
 ## https:#app.codility.com/programmers/lessons/7-stacks_and_queues/brackets/
 ## Correctness: 
 ## Performance: 
 ## Difficulty: Painless
-
-
