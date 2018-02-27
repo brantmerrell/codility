@@ -18,6 +18,6 @@ __result__ = fish(ARGS_A, ARGS_B)
 print(["result: "]+[__result__])
 # Codility Testing:
 ## https://app.codility.com/demo/results/trainingQYZX6P-S8W/ ; trainingK59HWD-FN2
-## Correctness: 100%
-## Performance: 77%
+## Correctness: 
+## Performance: 
 ## Difficulty: Painless

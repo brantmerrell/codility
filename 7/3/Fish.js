@@ -30,6 +30,6 @@ var result = StoneWall(args);
 console.log("result: " + result); //+ " ; milliseconds: " + (time2 - time1));
 // Codility Testing:
 /// https://app.codility.com/demo/results/trainingSTMQVS-DX6/
-/// Correctness: 100%
-/// Performance: 77%
+/// Correctness:
+/// Performance:
 /// Difficulty: Painless
