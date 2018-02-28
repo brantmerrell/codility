@@ -1,4 +1,4 @@
-// Cover "Manhattan skyline" using the minimum number of rectangles. 
+// Cover 'Manhattan skyline' using the minimum number of rectangles. 
 function StoneWall(H) {
     // start block count at 1
     var blocks = H.length;
@@ -22,12 +22,11 @@ function StoneWall(H) {
     return (blocks);
 }
 // Bash Testing:
-var args = process.argv[2];
-args = args.replace(/^\[|\]$/g, "").split(",").map(function (item) { return (parseInt(item)); });
-// var time1 = Date.now();
+// import { } from 'node';
+var args = process.argv[2].replace(/^\[|\]$/g, '').split(',').map(function (item) { return (parseInt(item)); });
 var result = StoneWall(args);
-// var time2 = Date.now();
-console.log("result: " + result); //+ " ; milliseconds: " + (time2 - time1));
+// eslint-disable-next-line no-console
+console.log('JavaScript result: ' + result);
 // Codility Testing:
 /// https://app.codility.com/demo/results/trainingSTMQVS-DX6/
 /// Correctness: 100%

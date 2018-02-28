@@ -9,13 +9,13 @@
 # echo "input: [8,8,5,7,9,8,7,4,8]; expect 7"
 # echo
 # echo R:
-# Rscript 7.2_StoneWall.R '[8,8,5,7,9,8,7,4,8]'
+# Rscript StoneWall.R '[8,8,5,7,9,8,7,4,8]'
 # echo
 # echo Python:
-# python 7.2_StoneWall.py '[8,8,5,7,9,8,7,4,8]'
+# python stone_wall.py '[8,8,5,7,9,8,7,4,8]'
 # echo
 # echo JavaScript:
-# nodejs 7.2_StoneWall.js '[8,8,5,7,9,8,7,4,8]'
+# nodejs StoneWall.js '[8,8,5,7,9,8,7,4,8]'
 # echo
 echo
 echo
@@ -23,11 +23,11 @@ echo "input: [1,1,1]; expect 1"
 myString="[1,1,1]"
 echo
 echo R:
-Rscript 7.2_StoneWall.R $myString
+Rscript StoneWall.R $myString
 echo
 echo Python:
-python 7.2_StoneWall.py $myString
+python stone_wall.py $myString
 echo
 echo JavaScript:
-nodejs 7.2_StoneWall.js $myString
+nodejs StoneWall.js $myString
 echo

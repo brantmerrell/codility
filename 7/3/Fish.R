@@ -1,16 +1,17 @@
 # N voracious fish are moving along a river. Calculate how many fish are alive.
-# Fish <- function(A,B){
-# }
+Fish <- function(A,B){
+    return(c(A=A,B=B))
+}
 # Bash Testing:
-args <- commandArgs()[6]
-args <- gsub("^\\[|\\]$","",args)
-args <- as.numeric(unlist(strsplit(args, ",")))
-print(args)
-# time1 <- unclass(Sys.time())
-# result <- Fish(args)
-# time2 <- unclass(Sys.time())
-print(paste("result:", result))#, "; milliseconds:",(time2-time1)*1000))
+ARGS_A <- commandArgs()[6]
+ARGS_B <- strsplit(ARGS_A,"\\],\\[")[[1]][2]
+ARGS_A <- strsplit(ARGS_A,"\\],\\[")[[1]][1]
+ARGS_A <- gsub("^\\[|\\]$","",ARGS_A)
+ARGS_B <- gsub("^\\[|\\]$","",ARGS_B)
+ARGS_A <- as.numeric(unlist(strsplit(ARGS_A, ",")))
+ARGS_B <- as.numeric(unlist(strsplit(ARGS_B, ",")))
+RESULT <- Fish(ARGS_A,ARGS_B)
+print(paste("result:", paste(RESULT,collapse=" ")))
 # Codility Testing:
-## https://app.codility.com/programmers/
 ## R Language not assessed 
 ## Difficulty: Painless
