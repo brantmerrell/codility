@@ -1,0 +1,7 @@
+************* Module temp
+W: 30, 4: Using the global statement (global-statement)
+W: 38, 4: Using the global statement (global-statement)
+
+------------------------------------------------------------------
+Your code has been rated at 9.31/10 (previous run: 9.31/10, +0.00)
+
