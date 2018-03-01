@@ -16,6 +16,7 @@ function Fish(arr_a,arr_b) {
     }
     // loop through indices of arrays
     for(var ndx_i=0; ndx_i<arr_a.length; ndx_i++){
+        // UP
         // travel up the array to identify when direction 1 eats direction 0
         // only adjust upMax upwards when ndx_i-fish is direction 1 and larger than upMax
         // if upMax is smaller than up-traveling fish ndx_i
@@ -34,6 +35,7 @@ function Fish(arr_a,arr_b) {
         if(upMax<ndx_i && arr_b[ndx_i]==0 && arr_a[ndx_i]<arr_a[upMax]){
             fishCount-=1;
         }
+        // DOWN
         // travel down the array to identify when direction 0 eats direction 1
         // if index direction is 0 and downMax is smaller than index size, 
         if(arr_b[ndx_i]==0 && arr_a[downMax]<arr_a[ndx_i]){
@@ -69,7 +71,7 @@ var result = Fish(ARGS_A,ARGS_B);
 console.log('result: ' + result); //+ ' ; milliseconds: ' + (time2 - time1));
 // Codility Testing:
 /// https://app.codility.com/demo/results/training42TT5X-QKF/; 
-/// trainingXFRTM3-GER - continuous while loop issue
 /// Correctness: 75% - consistently not subtracting enough
 /// Performance: 50%
+/// trainingXFRTM3-GER - continuous while loop issue
 /// Difficulty: Painless

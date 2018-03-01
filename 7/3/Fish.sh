@@ -8,9 +8,9 @@ echo "    B[i] in [0,1]"
 echo "    Elements of A are distinct"
 myString="[4,3,2,1,5],[0,1,0,0,0]"
 echo "input: "$myString" ; expect 2"
-echo
-echo R:
-Rscript Fish.R $myString
+# echo
+# echo R:
+# Rscript Fish.R $myString
 echo
 echo Python:
 python fish.py $myString
@@ -46,7 +46,12 @@ done
 ArrayA+="]"
 ArrayB+="]"
 echo
+echo $ArrayA
+echo
+echo $ArrayB
+echo
 echo JavaScript: 
 nodejs Fish.js $ArrayA$ArrayB
+echo
 echo Python:
 python fish.py $ArrayA$ArrayB
