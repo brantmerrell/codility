@@ -9,15 +9,15 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "program": "${workspaceFolder}/7/3/Fish.js"
-        }//,
+            "program": "${workspaceFolder}/7/4/nesting.js"
+        }
         // {
         //     "name": "Python",
         //     "type": "python",
         //     "request": "launch",
         //     "stopOnEntry": true,
         //     "pythonPath": "${config:python.pythonPath}",
-        //     "program": "/home/joshuabrantmerrell/codility/7/3/fish.py",
+        //     "program": "/home/joshuabrantmerrell/codility/7/4/nesting.py",
         //     "cwd": "${workspaceFolder}",
         //     "env": {},
         //     "envFile": "${workspaceFolder}/.env",

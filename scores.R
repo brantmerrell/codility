@@ -1,5 +1,5 @@
 # A script for aggregating the scores listed in scripts within this repo
-Files <- list.files(pattern="(ts|py)$",recursive=T,full.names=T)
+Files <- list.files(pattern="(js|py)$",recursive=T,full.names=T)
 Files <- Files[grepl("^./\\d/",Files)]
 scores <- data.frame(exercise=Files,
                      performance="",
@@ -28,8 +28,8 @@ scores$difficulty <- tolower(gsub("^([[:punct:]]| |\\t)+[Dd]ifficulty: ","",scor
 scores <- scores[!is.na(scores$correctness),]
 write.csv(scores,"scores.csv",row.names=F)
 DF <- rbind(	py.correctness=summary(scores[grepl("py$",scores$exercise),"correctness"])[1:6],
-		ts.correctness=summary(scores[grepl("ts$",scores$exercise),"correctness"])[1:6],
+		js.correctness=summary(scores[grepl("js$",scores$exercise),"correctness"])[1:6],
 		py.performance=summary(scores[grepl("py$",scores$exercise),"performance"])[1:6],
-		ts.performance=summary(scores[grepl("ts$",scores$exercise),"performance"])[1:6])
+		js.performance=summary(scores[grepl("js$",scores$exercise),"performance"])[1:6])
 print(DF)
 write.csv(DF,"scoreSummary.csv")

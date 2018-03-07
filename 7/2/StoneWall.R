@@ -1,4 +1,5 @@
-# Cover "Manhattan skyline" using the minimum number of rectangles. 
+
+# Cover "Manhattan skyline" using the minimum number of rectangles.
 StoneWall <- function(H){
     # define N as length of H
     N <- length(H)
