@@ -9,7 +9,7 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "program": "${workspaceFolder}/7/4/nesting.js"
+            "program": "${workspaceFolder}/8/1/dominator.js"
         }
         // {
         //     "name": "Python",

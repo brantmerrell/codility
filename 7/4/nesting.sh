@@ -21,4 +21,3 @@ echo 'Python:'
 python nesting.py $myString
 echo 'JavaScript:'
 node nesting.js $myString
-myString='())'
