@@ -1,5 +1,4 @@
 // https://codility.com/media/train/3-PrefixSums.pdf
-
 function prefix_sums(arr_a){
     // 5.1 Counting prefix sums
     // define length
@@ -16,7 +15,6 @@ function prefix_sums(arr_a){
         // (arr_a's corresponding index is [k - 1])
         arr_res[k] = arr_res[k - 1] + arr_a[k - 1];
     }
-
     return(arr_res);
 }
 function count_total(arr_p, ndx_x, ndx_y){

@@ -20,7 +20,7 @@ nodejs Fish.js $myString
 echo
 echo
 echo
-echo "input: length=100, A[i]=random, B[i]=(1 OR 0)"
+echo "input: length=10, A[i]=random, B[i]=(1 OR 0)"
 number=$RANDOM
 let "number %= 10000"
 ArrayA="["$number
@@ -31,7 +31,7 @@ else
     ArrayB="["1
 fi
 i=1
-while [ $i -lt 100 ];
+while [ $i -lt 10 ];
 do
 	number=$RANDOM
 	ArrayA+=","$number
@@ -51,7 +51,7 @@ echo
 echo $ArrayB
 echo
 echo JavaScript: 
-nodejs Fish.js $ArrayA$ArrayB
+nodejs Fish.js $ArrayA,$ArrayB
 echo
 echo Python:
-python fish.py $ArrayA$ArrayB
+python fish.py $ArrayA,$ArrayB

@@ -1,5 +1,4 @@
 """https://codility.com/media/train/3-PrefixSums.pdf"""
-
 def prefix_sums(arr_a):
     """5.1 Counting prefix sums"""
     # define length
@@ -14,14 +13,12 @@ def prefix_sums(arr_a):
         arr_res[k] = arr_res[k - 1] + arr_a[k - 1]
     # return array result
     return arr_res
-
 def count_total(arr_p, int_x, int_y):
     """5.2 total of one slice"""
     # because arr_p was built as a sequential sum from arr_a,
     # the sum of a range in arr_a == the difference between two points of arr_p
     result = arr_p[int_y + 1] - arr_p[int_x]
     return result
-
 def mushrooms(arr_a, pos_k, mov_m):
     """5.3 mushroom picker O(n+m)"""
     # store length of input array

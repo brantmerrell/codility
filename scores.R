@@ -1,12 +1,12 @@
 # A script for aggregating the scores listed in scripts within this repo
 Files <- list.files(pattern="(ts|py)$",recursive=T,full.names=T)
-Files <- Files[grepl("(\\d/){2}",Files)]
+Files <- Files[grepl("^./\\d/",Files)]
 scores <- data.frame(exercise=Files,
-		performance="",
-		correctness="",
-		difficulty="",
-		link="",
-		stringsAsFactors=F)
+                     performance="",
+                     correctness="",
+                     difficulty="",
+                     link="",
+                     stringsAsFactors=F)
 for(n in 1:nrow(scores)){
 	script <- readLines(scores[n,"exercise"])
 	scores[n,"performance"] <- paste(script[grepl("performance",script,ignore.case=T)],
@@ -22,10 +22,9 @@ for(n in 1:nrow(scores)){
 }
 
 scores$link <- sub("^[[:punct:]]+ +","",scores$link)
-#library(stringr)
 scores$performance <- as.numeric(gsub("[[:alpha:]]|[[:punct:]]| ","",scores$performance))
 scores$correctness <- as.numeric(gsub("[[:alpha:]]|[[:punct:]]| ","",scores$correctness))
-scores$difficulty <- tolower(gsub("^([[:punct:]]| )+[Dd]ifficulty: ","",scores$difficulty))
+scores$difficulty <- tolower(gsub("^([[:punct:]]| |\\t)+[Dd]ifficulty: ","",scores$difficulty))
 scores <- scores[!is.na(scores$correctness),]
 write.csv(scores,"scores.csv",row.names=F)
 DF <- rbind(	py.correctness=summary(scores[grepl("py$",scores$exercise),"correctness"])[1:6],

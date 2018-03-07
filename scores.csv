@@ -1,4 +1,6 @@
 "exercise","performance","correctness","difficulty","link"
+"./1/binary_gap.py",NA,100,"painless","https://app.codility.com/programmers/lessons/1-iterations/binary_gap/"
+"./1/binary_gap.ts",NA,100,"painless","	/// https://app.codility.com/programmers/lessons/1-iterations/binary_gap/"
 "./2/1/odd_occurrences_in_array.py",100,100,"painless","https://app.codility.com/programmers/lessons/2-arrays/odd_occurrences_in_array/"
 "./2/1/OddOccurrencesInArray.ts",50,100,"painless","https://app.codility.com/programmers/lessons/2-arrays/odd_occurrences_in_array/"
 "./2/2/cyclic_rotation.py",NA,100,"painless","https://app.codility.com/programmers/lessons/2-arrays/cyclic_rotation/"
@@ -37,4 +39,4 @@
 "./7/1/Brackets.ts",80,100,"painless","https://app.codility.com/demo/results/trainingJ3BU8D-N8G/"
 "./7/2/stone_wall.py",77,100,"painless","https://app.codility.com/demo/results/trainingQYZX6P-S8W/ ; trainingK59HWD-FN2"
 "./7/2/StoneWall.ts",77,100,"painless","https://app.codility.com/demo/results/trainingSTMQVS-DX6/"
-"./7/3/fish.py",50,50,"painless","https://app.codility.com/demo/results/trainingXVYYMB-PCH/"
+"./7/3/fish.py",100,100,"painless","https://app.codility.com/demo/results/trainingAHFWU3-BTM/"

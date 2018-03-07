@@ -1,4 +1,0 @@
-************* Module fish
-C: 14, 0: Line too long (108/100) (line-too-long)
-------------------------------------------------------------------
-Your code has been rated at 9.63/10 (previous run: 9.63/10, +0.00)
