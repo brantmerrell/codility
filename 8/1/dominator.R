@@ -19,9 +19,9 @@ dominator <- function(vec_a){
 # debugging
 # VEC_A <- c(3, 4, 3, 2, 3, -1, 3, 3)
 # print(dominator(VEC_A) %in% c(0, 2, 4, 6, 7))
-# expect degit that corresponds as zero-index to value 3
+# expect digit that corresponds as zero-index to value 3
 # Bash Testing:
 VEC_A <- commandArgs()[6] # store arguments passed from command line
 VEC_A <- gsub("\\]|\\[", "", VEC_A) # remove brackets
-VEC_A <- unlist(strsplit(VEC_A, ", *")) # conver to vector
+VEC_A <- unlist(strsplit(VEC_A, ", *")) # convert to vector
 print(dominator(VEC_A))

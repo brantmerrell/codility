@@ -15,8 +15,8 @@ function dominator(arr_a){
     return(-1);
 }
 // Debugging:
-// ARGS_A = [3,4,3,2,3,-1,3,3];
-// dominator(ARGS_A);
+ARGS_A = [3,4,3,2,3,-1,3,3];
+dominator(ARGS_A);
 // Bash testing:
 var ARGS_A = process.argv[2]; // read arguments from command line
 ARGS_A = ARGS_A.replace(/\[|\]/g,''); // remove brackets
