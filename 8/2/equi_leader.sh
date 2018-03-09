@@ -6,7 +6,7 @@ myString='[4,3,4,4,4,2]'
 echo 'input: '$myString' ; expect 2:'
 echo 'R:'
 Rscript equi_leader.R $myString
-# echo 'Python:'
-# python equi_leader.py $myString
-# echo 'JavaScript:'
-# node equi_leader.js $myString
+echo 'Python:'
+python equi_leader.py $myString
+echo 'JavaScript:'
+node equi_leader.js $myString

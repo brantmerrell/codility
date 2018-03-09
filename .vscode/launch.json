@@ -9,7 +9,7 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "program": "${workspaceFolder}/8/1/dominator.js"
+            "program": "${workspaceFolder}/8/2/equi_leader.js"
         }
         // {
         //     "name": "Python",
@@ -17,7 +17,7 @@
         //     "request": "launch",
         //     "stopOnEntry": true,
         //     "pythonPath": "${config:python.pythonPath}",
-        //     "program": "/home/joshuabrantmerrell/codility/7/4/nesting.py",
+        //     "program": "/home/joshuabrantmerrell/codility/8/2/equi_leader.py",
         //     "cwd": "${workspaceFolder}",
         //     "env": {},
         //     "envFile": "${workspaceFolder}/.env",
