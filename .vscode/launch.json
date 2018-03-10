@@ -5,25 +5,25 @@
     "version": "0.2.0",
     "configurations": [
 
-        {
-            "type": "node",
-            "request": "launch",
-            "name": "Launch Program",
-            "program": "${workspaceFolder}/8/2/equi_leader.js"
-        }
         // {
-        //     "name": "Python",
-        //     "type": "python",
+        //     "type": "node",
         //     "request": "launch",
-        //     "stopOnEntry": true,
-        //     "pythonPath": "${config:python.pythonPath}",
-        //     "program": "/home/joshuabrantmerrell/codility/8/2/equi_leader.py",
-        //     "cwd": "${workspaceFolder}",
-        //     "env": {},
-        //     "envFile": "${workspaceFolder}/.env",
-        //     "debugOptions": [
-        //         "RedirectOutput"
-        //     ]
+        //     "name": "Launch Program",
+        //     "program": "${workspaceFolder}/8/2/equi_leader.js"
         // }
+        {
+            "name": "Python",
+            "type": "python",
+            "request": "launch",
+            "stopOnEntry": true,
+            "pythonPath": "${config:python.pythonPath}",
+            "program": "/home/joshuabrantmerrell/codility/reading/leader.py",
+            "cwd": "${workspaceFolder}",
+            "env": {},
+            "envFile": "${workspaceFolder}/.env",
+            "debugOptions": [
+                "RedirectOutput"
+            ]
+        }
     ]
 }
