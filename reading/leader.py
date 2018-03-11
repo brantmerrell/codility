@@ -24,7 +24,7 @@ def slow_leader(arr_a):
                 leader = candidate
     # return leader
     return leader
-slow_leader([6, 8, 4, 6, 8, 6, 6])
+# slow_leader([6, 8, 4, 6, 8, 6, 6])
 def fast_leader(arr_a):
     """O(n log(n))"""
     # define length of array
@@ -50,30 +50,41 @@ def fast_leader(arr_a):
         leader = candidate
     # return leader
     return leader
-fast_leader([6, 8, 4, 6, 8, 6, 6])
+# fast_leader([6, 8, 4, 6, 8, 6, 6])
 def golden_leader(arr_a):
     """O(n)"""
     # define length of array
     len_n = len(arr_a)
     # begin size at zero
     size = 0
-    # iterate through array
-    for ndx_k in range(len_n):
+    # iterate through array to fluctuate size variable
+    for elem in arr_a:
+        # test whether size is at zero. WHY?
         if size == 0:
+            # if so, add to size
             size += 1
-            value = arr_a[ndx_k]
+            # and set value as element
+            value = elem
         else:
-            if value != arr_a[ndx_k]:
+            # if size was not zero, test whether value is different from element. WHY?
+            if value != elem:
+                # if so, subtract from value.
                 size -= 1
             else:
+                # if value == elm_j, add to size
                 size += 1
+    # begin candidate at -1
     candidate = -1
+    # test whether size is greater than zero
     if size > 0:
+        # if so, change candidate to value
         candidate = value
+    # start leader at default of 'none' (-1)
     leader = -1
+    # start count at default of 0
     count = 0
-    for ndx_k in range(len_n):
-        if arr_a[ndx_k] == candidate:
+    for elem in arr_a:
+        if elem == candidate:
             count += 1
     if count > len_n // 2:
         leader = candidate
