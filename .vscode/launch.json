@@ -17,7 +17,7 @@
             "request": "launch",
             "stopOnEntry": true,
             "pythonPath": "${config:python.pythonPath}",
-            "program": "/home/joshuabrantmerrell/codility/reading/leader.py",
+            "program": "/home/joshuabrantmerrell/codility/reading/gcd.py",
             "cwd": "${workspaceFolder}",
             "env": {},
             "envFile": "${workspaceFolder}/.env",
