@@ -3,18 +3,18 @@ import java.util.Collections;
 class Solution {
     public static void main(String args[]) {
         if(args.length==0) {
-            System.out.println("input: 1041; output: " + solution(1041));
-            System.out.println("input: 15; output: " + solution(15));
-            System.out.println("input: 32; output: " + solution(32));
+            System.out.println("input: 1041; output: " + binary_gap(1041));
+            System.out.println("input: 15; output: " + binary_gap(15));
+            System.out.println("input: 32; output: " + binary_gap(32));
         }
         else
         {
             for(int i = 0; i < args.length; i++) {
-                System.out.println("input: " + args[i] + "; output: " + solution(Integer.parseInt(args[i])));
+                System.out.println("input: " + args[i] + "; output: " + binary_gap(Integer.parseInt(args[i])));
             }
         }
     }
-    static int solution (int N) {
+    static int binary_gap (int N) {
         // convert to binary string
         String bin = Integer.toBinaryString(N);
         // remove trailing/leading zeros; split by 1s
