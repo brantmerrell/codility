@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text.RegularExpressions;
 
 namespace solutions_cs
 {
@@ -36,12 +37,12 @@ namespace solutions_cs
             bin = Regex.Replace(bin,"^0+|0+$","");
 
             // split by 1s
-            String[] binArray = bin.Split("1");
+            String[] binArray = bin.Split(@"1".ToCharArray());
 
             // convert each binary gap to a character count
             int[] gaps = new int[binArray.Length];
             for(int i = 0; i < binArray.Length; i++) {
-                gaps[i] = binArray[i].length();
+                gaps[i] = binArray[i].Length;
             }
 
             // obtain maximum number from character counts
