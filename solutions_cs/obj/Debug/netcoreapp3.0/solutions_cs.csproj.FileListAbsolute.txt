@@ -1,0 +1,11 @@
+/home/joshuabrantmerrell/github_brantmerrell/codility/solutions_cs/obj/Debug/netcoreapp3.0/solutions_cs.csprojAssemblyReference.cache
+/home/joshuabrantmerrell/github_brantmerrell/codility/solutions_cs/obj/Debug/netcoreapp3.0/solutions_cs.AssemblyInfoInputs.cache
+/home/joshuabrantmerrell/github_brantmerrell/codility/solutions_cs/obj/Debug/netcoreapp3.0/solutions_cs.AssemblyInfo.cs
+/home/joshuabrantmerrell/github_brantmerrell/codility/solutions_cs/bin/Debug/netcoreapp3.0/solutions_cs
+/home/joshuabrantmerrell/github_brantmerrell/codility/solutions_cs/bin/Debug/netcoreapp3.0/solutions_cs.deps.json
+/home/joshuabrantmerrell/github_brantmerrell/codility/solutions_cs/bin/Debug/netcoreapp3.0/solutions_cs.runtimeconfig.json
+/home/joshuabrantmerrell/github_brantmerrell/codility/solutions_cs/bin/Debug/netcoreapp3.0/solutions_cs.runtimeconfig.dev.json
+/home/joshuabrantmerrell/github_brantmerrell/codility/solutions_cs/bin/Debug/netcoreapp3.0/solutions_cs.dll
+/home/joshuabrantmerrell/github_brantmerrell/codility/solutions_cs/bin/Debug/netcoreapp3.0/solutions_cs.pdb
+/home/joshuabrantmerrell/github_brantmerrell/codility/solutions_cs/obj/Debug/netcoreapp3.0/solutions_cs.dll
+/home/joshuabrantmerrell/github_brantmerrell/codility/solutions_cs/obj/Debug/netcoreapp3.0/solutions_cs.pdb
