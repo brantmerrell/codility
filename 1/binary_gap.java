@@ -1,17 +1,29 @@
-import java.util.Arrays;
-import java.util.Collections;
+import java.util.Stack;
+import java.util.Iterator;
 class Solution {
     public static void main(String args[]) {
-        if(args.length==0) {
-            System.out.println("input: 1041; output: " + binary_gap(1041));
-            System.out.println("input: 15; output: " + binary_gap(15));
-            System.out.println("input: 32; output: " + binary_gap(32));
-        }
-        else
-        {
-            for(int i = 0; i < args.length; i++) {
-                System.out.println("input: " + args[i] + "; output: " + binary_gap(Integer.parseInt(args[i])));
+
+        // build stack of test data
+        Stack<Integer> test_array = new Stack<>();
+        test_array.push(1041);
+        test_array.push(15);
+        test_array.push(32);
+
+        // add args to test data (if numeric)
+        for(int i = 0; i < args.length; i++) {
+            if(isNumeric(args[i]))
+            {
+                var new_test = Integer.parseInt(args[i]);
+                test_array.push(new_test);
             }
+        }
+
+        // print the output of each arg for binary_gap
+        var iter = test_array.iterator();
+        while (iter.hasNext())
+        {
+            var my_int = iter.next();
+            System.out.println("binary_gap(" + my_int + "): " + binary_gap(my_int));
         }
     }
     static int binary_gap (int N) {
@@ -37,5 +49,16 @@ class Solution {
             }
         }
         return result;
+    }
+    public static boolean isNumeric(String strNum) {
+        if (strNum == null) {
+            return false;
+        }
+        try {
+            double d = Double.parseDouble(strNum);
+        } catch (NumberFormatException nfe) {
+            return false;
+        }
+        return true;
     }
 }
