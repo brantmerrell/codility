@@ -4,7 +4,7 @@
 /// 1 <= K <= 100
 /// -1,000 <= Ai <= 1,000
 function CyclicRotation(A, K) {
-    // if A=, return ; otherwise, rotate:
+    // if A is length 0, return A; otherwise, rotate:
     if (A.length != 0) {
         // reduce K to minimal rotational impact
         while (A.length < K) {
