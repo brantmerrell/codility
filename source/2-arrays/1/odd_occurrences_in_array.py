@@ -4,12 +4,17 @@
 ## 1 <= A[i] <= 1,000,000,000
 ## all but 1 integers occur an even number of times
 def OddOccurrencesInArray(A):
-	import collections
-	# use collections.Counter() to count recurrences of each integer
-	# only store integers in object "Odd" which are not even
-	Odd = [m for m, count in collections.Counter(A).items() if not count % 2 == 0]
-	# return the only integer in the "Odd" array
-	return(Odd[0])
+    # initialize hash or dict
+    result = {}
+    # iterate through A
+    for ndx_i, val_j in enumerate(A):
+        # add to hash if not in hash
+        if(result.__contains__(val_j)):
+            result.pop(val_j)
+        # remove from hash if in hash
+        else:
+            result[val_j] = None
+    return list(result.keys())[0]
 # console testing:
 print(["OddOccurrencesInArray([3]); expect 3: "]+[OddOccurrencesInArray([3])])
 print(["OddOccurrencesInArray([9,3,9,3,9,7,9]); expect 7: "]+[OddOccurrencesInArray([9,3,9,3,9,7,9])])
