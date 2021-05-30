@@ -4,18 +4,16 @@
 /// 1 <= K <= 100
 /// -1,000 <= Ai <= 1,000
 function CyclicRotation(A, K) {
-    // if A is length 0, return A; otherwise, rotate:
-    if (A.length != 0) {
-        // reduce K to minimal rotational impact
-        while (A.length < K) {
-            K = K - A.length;
-        }
-        // splice A into A & B along point K, with K counted from the end of A
-        var B = A.splice(-1 * K);
-        // concatenate A and B in reverse from how they were spliced
-        A = B.concat(A);
-    }
-    return (A);
+	if(A.length === 0 | K === A.length | K === 0) {
+		return (A)
+	}
+	while (K > A.length) {
+		K = K - A.length
+	}
+	M = A.length - K;
+	let second = A.slice(0,M)
+	let first = A.slice(M)
+	return(first.concat(second))
 }
 // console testing:
 console.log("CyclicRotation([3,8,9,7,6], 3); expect 9,7,6,3,8: " + CyclicRotation([3, 8, 9, 7, 6], 3));
